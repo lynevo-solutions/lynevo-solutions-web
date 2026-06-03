@@ -64,7 +64,7 @@ export function Footer() {
         className="container-novera pb-8 text-xs pt-6 relative"
         style={{
           zIndex: 1,
-          color: "rgba(255,255,255,0.20)",
+          color: "rgba(255,255,255,0.45)",
           borderTop: "1px solid rgba(184,149,106,0.10)",
         }}
       >
