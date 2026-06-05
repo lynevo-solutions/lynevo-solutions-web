@@ -86,7 +86,7 @@ function ContactPage() {
           <div className="md:col-span-5">
             <FadeUp>
               <a
-                href="https://cal.com/severi-kokko/tutustumispuhelu"
+                href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
                 className="group inline-flex items-center gap-2 hover:text-[color:var(--gold)] transition-colors text-lg leading-relaxed"
                 style={{ color: "var(--ink)" }}
               >

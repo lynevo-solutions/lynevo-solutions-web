@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { FadeUp } from "../components/FadeUp";
 
 export const Route = createFileRoute("/about")({
@@ -245,8 +245,10 @@ function AboutPage() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <div className="mt-12">
-              <Link
-                to="/contact"
+              <a
+                href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 text-sm border transition-colors duration-300"
                 style={{
                   borderColor: "rgba(184,149,106,0.5)",
@@ -265,7 +267,7 @@ function AboutPage() {
                 <span className="transition-transform group-hover:translate-x-1">
                   →
                 </span>
-              </Link>
+              </a>
             </div>
           </FadeUp>
         </div>

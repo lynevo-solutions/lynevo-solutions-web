@@ -72,8 +72,10 @@ export function Nav() {
               {l.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-flex items-center px-5 py-2.5 text-sm border transition-colors duration-300 ${
               overDark
                 ? "border-white/35 text-white hover:border-[color:var(--gold)] hover:text-[color:var(--gold)]"
@@ -81,7 +83,7 @@ export function Nav() {
             }`}
           >
             Varaa kartoitus
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -107,13 +109,15 @@ export function Nav() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="inline-flex items-center justify-center px-5 py-3 text-sm bg-[color:var(--ink)] text-[color:var(--background)]"
             >
               Varaa kartoitus
-            </Link>
+            </a>
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 import { useEffect, useRef } from "react";
@@ -277,8 +277,10 @@ function Home() {
 
             {/* CTA */}
             <ClipReveal delay={T_CTA} className="mt-10">
-              <Link
-                to="/contact"
+              <a
+                href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wide border transition-colors duration-300"
                 style={{ borderColor: "rgba(255,255,255,0.25)", color: "rgba(255,255,255,0.85)" }}
                 onMouseEnter={(e) => {
@@ -292,7 +294,7 @@ function Home() {
               >
                 Varaa AI-mahdollisuuskartoitus — 1 990 €
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </Link>
+              </a>
               <p
                 className="mt-5 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.3)" }}
@@ -606,8 +608,10 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.24}>
             <div className="mt-12">
-              <Link
-                to="/contact"
+              <a
+                href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-9 py-5 text-sm tracking-wide border transition-colors duration-300"
                 style={{ borderColor: "rgba(184,149,106,0.5)", color: "var(--gold)" }}
                 onMouseEnter={(e) => {
@@ -621,7 +625,7 @@ function Home() {
               >
                 Varaa tutustumispuhelu
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </Link>
+              </a>
               <p
                 className="mt-6 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.25)" }}
