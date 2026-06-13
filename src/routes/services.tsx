@@ -20,11 +20,12 @@ const E = [0.16, 1, 0.3, 1] as const;
 
 function ServicesPage() {
   const included = [
-    "Strukturoidut haastattelut johdolle ja operatiiviselle tiimille erikseen (2 × 45 min)",
+    "Strukturoidut haastattelut johdolle (60 min) ja operatiiviselle tiimille (45 min) erikseen",
     "Kattava toimintaprosessien kartoitus ydinpalveluidenne osalta",
     "AI-mahdollisuusanalyysi priorisoituna ROI:n, toteutettavuuden ja käyttöönottokustannusten mukaan",
     "Työkalukohtaiset suositukset toimittajavertailuineen",
     "Ammattimainen kirjallinen raportti, toimitetaan 10 arkipäivässä",
+    "Luonnosmatriisin tarkistuspalaveri — käymme löydökset läpi yhdessä ennen lopullista raporttia (30–45 min)",
     "45 minuutin raportin purkusessio — käymme läpi löydökset ja sovitaan jatkotoimenpiteistä",
   ];
 
