@@ -43,7 +43,7 @@ function ServicesPage() {
     {
       step: "03",
       title: "Kuukausisopimus",
-      body: "Alkaa kun ROI-raportti vahvistaa 30 tunnin säästön. Jos tavoite ei toteudu — ette maksa mitään ja pidätte kaiken minkä rakensimme.",
+      body: "Alkaa kun ROI-raportti vahvistaa 30 tunnin säästön. Jos tavoite ei toteudu — ette maksa mitään.",
     },
   ];
 
@@ -138,7 +138,7 @@ function ServicesPage() {
                   className="mt-8 text-lg leading-relaxed max-w-xl"
                   style={{ color: "var(--warm)" }}
                 >
-                  Rakennamme ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin 30 tunnin kuukausisäästö on objektiivisesti vahvistettu. Jos emme saavuta tavoitetta, ette maksa mitään ja pidätte kaiken minkä rakensimme.
+                  Rakennamme ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin 30 tunnin kuukausisäästö on objektiivisesti vahvistettu. Jos emme saavuta tavoitetta, ette maksa mitään.
                 </p>
               </FadeUp>
 

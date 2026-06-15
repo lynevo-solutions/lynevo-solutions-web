@@ -382,7 +382,7 @@ function Home() {
               {
                 step: "Vaihe 3",
                 title: "30 päivää — sitten päätös",
-                body: "Kuukauden kuluttua katsomme ROI-raportin: kuinka monta tuntia säästyi. Jos 30 tuntia tai enemmän — kuukausisopimus käynnistyy. Jos alle — ette maksa mitään ja pidätte kaiken.",
+                body: "Kuukauden kuluttua katsomme ROI-raportin: kuinka monta tuntia säästyi. Jos 30 tuntia tai enemmän — kuukausisopimus käynnistyy. Jos alle — ette maksa mitään.",
               },
             ].map((s, i) => (
               <FadeUp key={s.title} delay={i * 0.1}>
