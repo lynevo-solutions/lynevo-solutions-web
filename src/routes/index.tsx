@@ -146,7 +146,7 @@ function HeroOrbs() {
 
 // ── Trust marquee ────────────────────────────────────────────
 const TRUST = [
-  "Tekoälyjärjestelmä ilmaiseksi",
+  "Järjestelmä ilmaiseksi",
   "30 tuntia säästöä tai ette maksa mitään",
   "Ei sitoumuksia",
   "Suomalaisille tilitoimistoille",
@@ -248,7 +248,7 @@ function Home() {
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[50px] leading-[1.08] text-white">
               <LineReveal delay={T_L1}>
-                Rakennamme teidän tilitoimistolle tekoälyjärjestelmän.
+                Rakennamme teidän tilitoimistolle järjestelmän.
               </LineReveal>
               <LineReveal delay={T_L2}>
                 <em className="not-italic font-serif" style={{ color: "var(--gold)" }}>
@@ -314,14 +314,14 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <h2 className="text-[28px] md:text-[44px] leading-tight max-w-4xl">
-              Tilitoimistoilla on yksi ongelma tekoälyssä.
+              Tilitoimistoilla on yksi ongelma automaatiossa.
             </h2>
           </FadeUp>
 
           <div className="mt-24 grid gap-0 md:grid-cols-3 border-t border-[color:var(--divider)]">
             {[
               ["01", "Laskujen syöttö, palkanlaskenta, ALV-ilmoitukset, asiakkaiden dokumenttien metsästys. Tiimiltänne menee joka viikko tunteja tehtäviin, jotka voidaan automatisoida."],
-              ["02", "Procountorissa, Netvisorissa ja Fennoassa on jo tekoälyominaisuuksia. Useimmat tilitoimistot eivät tiedä mitä niissä on tai miten niistä saa mitään irti. Ohjelmistot kehittyvät. Käyttö ei."],
+              ["02", "Procountorissa, Netvisorissa ja Fennoassa on jo automaatio-ominaisuuksia. Useimmat tilitoimistot eivät tiedä mitä niissä on tai miten niistä saa mitään irti. Ohjelmistot kehittyvät. Käyttö ei."],
               ["03", "Joka kuukausi ilman automaatiota on kuukausi, jonka tiimiltänne menee väärään paikkaan. Kilpailijat eivät odota."],
             ].map(([n, t], i) => (
               <FadeUp key={n} delay={i * 0.1}>
@@ -416,7 +416,7 @@ function Home() {
           <div className="mt-24 grid gap-4 md:grid-cols-2">
             {[
               {
-                title: "Tekoälyjärjestelmä ilmaiseksi",
+                title: "Järjestelmä ilmaiseksi",
                 body: "Rakennamme, käyttöönotamme ja ylläpidämme järjestelmän teidän tilitoimistossanne. Kuukausisopimus käynnistyy vasta kun 30 tuntia säästyy. Jos ei säästy, ette maksa mitään.",
                 price: "Ilmainen käyttöönotto · Tuloksiin sidottu",
                 featured: true,

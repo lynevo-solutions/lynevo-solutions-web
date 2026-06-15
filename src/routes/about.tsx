@@ -95,7 +95,7 @@ function AboutPage() {
           <div className="md:col-span-8">
             <FadeUp delay={0.1}>
               <p className="text-[22px] md:text-[26px] leading-snug font-serif text-[color:var(--ink)]">
-                Emme myy tekoälyä teoriana. Rakennamme järjestelmiä. Jokainen asiakas saa järjestelmän ilmaiseksi — kuukausisopimus käynnistyy vasta kun ROI-raportti vahvistaa 30 tunnin säästön. Jos emme pääse tavoitteeseen, ette maksa mitään.
+                Emme myy teoriaa. Rakennamme järjestelmiä. Jokainen asiakas saa järjestelmän ilmaiseksi — kuukausisopimus käynnistyy vasta kun ROI-raportti vahvistaa 30 tunnin säästön. Jos emme pääse tavoitteeseen, ette maksa mitään.
               </p>
             </FadeUp>
           </div>

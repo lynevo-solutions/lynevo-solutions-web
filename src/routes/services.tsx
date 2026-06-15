@@ -107,7 +107,7 @@ function ServicesPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Rakennamme, käyttöönotamme ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin tulokset on todistettu.
+              Rakennamme, käyttöönotamme ja ylläpidämme järjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin tulokset on todistettu.
             </p>
           </FadeUp>
         </div>
