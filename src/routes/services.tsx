@@ -8,7 +8,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Palvelut, jotka on rakennettu päätösten ympärille. Tutustu 1 990 € AI-mahdollisuuskartoitukseen, käyttöönottoon, koulutukseen ja strategiseen kumppanuuteen.",
+          "Tekoälyjärjestelmä suomalaisille tilitoimistoille. Ilmainen setup, tuloksiin sidottu reteneri. Ei aloitusmaksua, ei riskiä.",
       },
     ],
   }),
@@ -20,13 +20,13 @@ const E = [0.16, 1, 0.3, 1] as const;
 
 function ServicesPage() {
   const included = [
-    "Strukturoidut haastattelut johdolle (60 min) ja operatiiviselle tiimille (45 min) erikseen",
-    "Kattava toimintaprosessien kartoitus ydinpalveluidenne osalta",
-    "AI-mahdollisuusanalyysi priorisoituna ROI:n, toteutettavuuden ja käyttöönottokustannusten mukaan",
-    "Työkalukohtaiset suositukset toimittajavertailuineen",
-    "Ammattimainen kirjallinen raportti, toimitetaan 10 arkipäivässä",
-    "Luonnosmatriisin tarkistuspalaveri — käymme löydökset läpi yhdessä ennen lopullista raporttia (30–45 min)",
-    "45 minuutin raportin purkusessio — käymme läpi löydökset ja sovitaan jatkotoimenpiteistä",
+    "1–2 uutta automaatiota rakennettuna ja käyttöönotettuna kuukausittain",
+    "Kaikki olemassa olevat automaatiot ylläpidettynä ja seurattuna",
+    "Kuukausittainen strategiapuhelu (30 min) — Amin valmistelee ja johtaa",
+    "ROI-raportti joka kuukausi. Objektiivinen mittaus säästetystä ajasta ja euroista.",
+    "Saman päivän vastaus kaikkiin kysymyksiin toimistoaikana",
+    "24 tunnin korjaus, jos jokin hajoaa. Ilman lisäveloitusta.",
+    "Ei yllätyksiä laskuissa. Ylläpito sisältyy aina.",
   ];
 
   const ladder = [
@@ -42,8 +42,8 @@ function ServicesPage() {
     },
     {
       step: "04",
-      title: "Strateginen kumppanuus",
-      body: "Tulemme toimistonne jatkuvaksi AI-kumppaniksi — ohjaamme kehityspolkuanne kuukausittain teknologian ja liiketoimintanne kehittyessä.",
+      title: "AI-mahdollisuuskartoitus",
+      body: "Valinnainen aloituspiste asiakkaille, jotka haluavat selvyyden ennen sitoutumista. Strukturoitu selvitys toimistonne AI-valmiudesta. Kartoituksen löydökset ohjaavat suoraan tekoälyjärjestelmän rakentamista. 1 990 €.",
     },
   ];
 
@@ -99,8 +99,7 @@ function ServicesPage() {
               className="text-[30px] md:text-[46px] lg:text-[56px] leading-[1.05] max-w-5xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Palvelut, jotka on rakennettu päätösten — ei toimitusten —
-              ympärille.
+              Tekoälyjärjestelmä teidän toimistolle. Ilmaiseksi. Tuloksiin sidottuna.
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -108,8 +107,7 @@ function ServicesPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Jokainen toimeksianto alkaa selkeästä lopputuloksesta. Emme tee
-              epämääräistä.
+              Rakennamme, käyttöönotamme ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin tulokset on todistettu.
             </p>
           </FadeUp>
         </div>
@@ -125,19 +123,19 @@ function ServicesPage() {
               </FadeUp>
               <FadeUp delay={0.1}>
                 <h2 className="text-[30px] md:text-[48px] leading-tight">
-                  AI-mahdollisuuskartoitus
+                  Tekoälyjärjestelmä ilmaiseksi. Reteneri vasta kun tulokset on todistettu.
                 </h2>
               </FadeUp>
               <FadeUp delay={0.15}>
                 <div className="mt-8 flex items-baseline gap-4">
                   <span className="text-5xl md:text-6xl font-serif text-[color:var(--ink)]">
-                    1 990 €
+                    Ilmainen setup
                   </span>
                   <span
                     className="text-sm tracking-wide"
                     style={{ color: "var(--warm)" }}
                   >
-                    kiinteä hinta
+                    reteneri käynnistyy päivänä 31
                   </span>
                 </div>
               </FadeUp>
@@ -146,16 +144,13 @@ function ServicesPage() {
                   className="mt-8 text-lg leading-relaxed max-w-xl"
                   style={{ color: "var(--warm)" }}
                 >
-                  Strukturoitu selvitys tilitoimistoille, jotka haluavat
-                  ymmärtää tarkalleen, missä AI luo mitattavaa arvoa — ja
-                  missä ei. Ei hypeä. Ei yleisiä suosituksia. Konkreettiset
-                  löydökset, konkreettiset työkalut, konkreettinen ROI-kehys.
+                  Rakennamme ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ette maksa senttiäkään ennen kuin 30 tunnin kuukausisäästö on objektiivisesti vahvistettu. Jos emme saavuta tavoitetta, ette maksa mitään ja pidätte kaiken minkä rakensimme.
                 </p>
               </FadeUp>
 
               <FadeUp delay={0.25}>
                 <div className="mt-12">
-                  <p className="eyebrow mb-6">Mitä sisältyy</p>
+                  <p className="eyebrow mb-6">Mitä kuukausireteneri sisältää</p>
                   <ul
                     className="divide-y border-t"
                     style={{
@@ -217,10 +212,7 @@ function ServicesPage() {
                 >
                   <p className="eyebrow mb-6">Kenelle tämä sopii</p>
                   <p className="text-lg leading-relaxed" style={{ color: "var(--ink)" }}>
-                    Tilitoimistoille, joissa on 5–20 työntekijää ja jotka
-                    epäilevät AI:n voivan parantaa toimintaansa — mutta eivät
-                    tiedä mistä aloittaa, tai ovat kokeilleet työkaluja ilman
-                    strategiaa.
+                    Suomalaisille tilitoimistoille, joissa on 5–20 työntekijää. Procountor, Netvisor, Fennoa, Visma, Fivaldi, Heeros tai eTasku käytössä. Riittävästi manuaalisia prosesseja, jotta 30 tunnin kuukausisäästö on realistinen.
                   </p>
                 </div>
               </FadeUp>
@@ -259,7 +251,7 @@ function ServicesPage() {
               className="text-[28px] md:text-[44px] leading-tight max-w-3xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Kartoitus → Käyttöönotto → Koulutus → Kumppanuus
+              Täydentävät palvelut
             </h2>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -267,8 +259,7 @@ function ServicesPage() {
               className="mt-6 text-sm tracking-wider"
               style={{ color: "rgba(255,255,255,0.40)" }}
             >
-              Useimmat asiakkaat aloittavat kartoituksella. Mitä seuraavaksi
-              tapahtuu, riippuu siitä, mitä löydämme.
+              Reteneri on pääpalvelumme. Alla täydentävät palvelut, joita tarjoamme tarpeen mukaan.
             </p>
           </FadeUp>
 
@@ -344,7 +335,7 @@ function ServicesPage() {
                   e.currentTarget.style.background = "transparent";
                 }}
               >
-                Aloita kartoituksella
+                Varaa tutustumispuhelu
                 <span className="transition-transform group-hover:translate-x-1">
                   →
                 </span>

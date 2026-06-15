@@ -100,12 +100,7 @@ function AboutPage() {
           <div className="md:col-span-8">
             <FadeUp delay={0.1}>
               <p className="text-[22px] md:text-[26px] leading-snug font-serif text-[color:var(--ink)]">
-                Emme myy tekoälyä. Löydämme kohdat, joissa se luo aitoa
-                liiketoiminta-arvoa, ja kerromme rehellisesti, missä se ei
-                luo. Kartoitus on olemassa, koska useimmat toimistot eivät
-                tarvitse kuukausisopimusta — ne tarvitsevat ensin selkeyden.
-                Annamme Teille sen selkeyden kiinteällä hinnalla, ilman
-                paineita jatkon suhteen.
+                Emme myy tekoälyä teoriana. Rakennamme järjestelmiä, jotka tuottavat mitattavia tuloksia. Jokainen asiakas saa tekoälyjärjestelmän ilmaiseksi — ja reteneri käynnistyy vasta kun 30 tunnin kuukausisäästö on objektiivisesti vahvistettu. Jos emme saa sitä aikaan, ette maksa mitään.
               </p>
             </FadeUp>
           </div>
@@ -240,7 +235,7 @@ function AboutPage() {
               className="text-[26px] md:text-[42px] leading-tight max-w-3xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Haluatteko tietää, sopiiko kartoitus toimistollenne?
+              Haluatteko nähdä, miten järjestelmä toimii teidän toimistossanne?
             </h2>
           </FadeUp>
           <FadeUp delay={0.12}>

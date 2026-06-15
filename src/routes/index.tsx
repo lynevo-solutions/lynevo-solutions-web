@@ -7,11 +7,11 @@ import { FadeUp } from "../components/FadeUp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lynevo Solutions — Selkeyttä tekoälyyn suomalaisille tilitoimistoille" },
+      { title: "Lynevo Solutions — Tekoälyjärjestelmä tilitoimistoille" },
       {
         name: "description",
         content:
-          "Lynevo toteuttaa strukturoidun AI-mahdollisuuskartoituksen suomalaisille tilitoimistoille. Kiinteä hinta. Selkeät löydökset. Toimitetaan 10 arkipäivässä.",
+          "Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmän ilmaiseksi. Jos se ei säästä tiimiänne 30 tuntia ensimmäisessä kuukaudessa, ette maksa mitään.",
       },
     ],
   }),
@@ -146,11 +146,11 @@ function HeroOrbs() {
 
 // ── Trust marquee ────────────────────────────────────────────
 const TRUST = [
-  "Strukturoitu AI-kartoitus",
-  "Toimitetaan 10 arkipäivässä",
-  "Ei sitoutumisvelvoitetta",
+  "Tekoälyjärjestelmä ilmaiseksi",
+  "30 tuntia säästöä tai ette maksa mitään",
+  "Ei sitoumuksia",
   "Suomalaisille tilitoimistoille",
-  "Selkeät löydökset",
+  "Reteneri käynnistyy vasta kun tulokset on todistettu",
 ];
 
 function TrustMarquee() {
@@ -248,11 +248,11 @@ function Home() {
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[50px] leading-[1.08] text-white">
               <LineReveal delay={T_L1}>
-                Tilitoimistonne pyörii ajalla, jota Teillä ei ole.
+                Tekoälyjärjestelmä teidän tilitoimistolle.
               </LineReveal>
               <LineReveal delay={T_L2}>
                 <em className="not-italic font-serif" style={{ color: "var(--gold)" }}>
-                  Tekoäly muuttaa sen.
+                  Ilmaiseksi. Tuloksiin sidottu.
                 </em>
               </LineReveal>
             </h1>
@@ -268,9 +268,7 @@ function Home() {
             {/* Subheading */}
             <ClipReveal delay={T_SUB} className="mt-10">
               <p className="text-[17px] leading-relaxed" style={{ color: "rgba(255,255,255,0.52)" }}>
-                Lynevo toteuttaa strukturoidun AI-mahdollisuuskartoituksen —
-                tunnistamme tarkalleen, missä toimistonne menettää aikaa ja rahaa,
-                ja mitä asialle kannattaa tehdä.
+                Me rakennamme teidän firmaan tekoälyjärjestelmän ilmaiseksi — ja jos se ei säästä tiimiänne 30 tuntia ensimmäisen kuukauden aikana, ette maksa meille mitään.
               </p>
             </ClipReveal>
 
@@ -298,7 +296,7 @@ function Home() {
                 className="mt-5 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.3)" }}
               >
-                30 minuuttia. Maksuton. Kerromme rehellisesti, sopiiko kartoitus Teille.
+                30 minuuttia. Ei sitoumuksia. Selvitetään yhdessä, sopiiko järjestelmä Teille.
               </p>
             </ClipReveal>
           </div>
@@ -366,7 +364,7 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <h2 className="text-[28px] md:text-[44px] leading-tight max-w-4xl">
-              Strukturoitu kartoitus. Selkeä raportti. Päätös, jonka voitte toteuttaa.
+              Ilmainen setup. Mitattu tulos. Reteneri vasta kun 30 tuntia säästyy.
             </h2>
           </FadeUp>
 
@@ -374,18 +372,18 @@ function Home() {
             {[
               {
                 step: "Vaihe 1",
-                title: "Kartoitus",
-                body: "Haastattelemme sekä johdon että operatiivisen tiimin erikseen — jotta näemme sekä strategiset tavoitteet että arjen todellisuuden.",
+                title: "Kartoitus ja setup",
+                body: "Selvitetään yhdessä, mitkä prosessit kannattaa automatisoida ensin. Rakennamme tekoälyjärjestelmän ja yhdistämme sen ohjelmistoihinne — Procountor, Netvisor, Fennoa, Visma tai Fivaldi. Valmis 5 arkipäivässä.",
               },
               {
                 step: "Vaihe 2",
-                title: "Analyysi",
-                body: "Tunnistamme arvokkaimmat AI-mahdollisuudet — priorisoituna ROI-potentiaalin, toteutettavuuden ja käyttöönottokustannusten mukaan.",
+                title: "Ensimmäinen kuukausi",
+                body: "Automaatiot käynnissä. Säästetyt tunnit mitataan objektiivisesti koko kuukauden ajan. Seuraamme aktiivisesti, että kaikki toimii.",
               },
               {
                 step: "Vaihe 3",
-                title: "Toimitus",
-                body: "Saatte ammattimaisen raportin, jossa on konkreettiset suositukset, työkaluvertailut ja realistinen käyttöönottoaikataulu.",
+                title: "ROI-raportti ja päätös",
+                body: "Jos tiimistänne on säästynyt 30 tuntia tai enemmän, reteneri käynnistyy automaattisesti sovittuun hintaan. Jos ei, ette maksa mitään ja pidätte kaiken.",
               },
             ].map((s, i) => (
               <FadeUp key={s.title} delay={i * 0.1}>
@@ -419,9 +417,9 @@ function Home() {
           <div className="mt-24 grid gap-4 md:grid-cols-2">
             {[
               {
-                title: "AI-mahdollisuuskartoitus",
-                body: "Lähtöpisteemme. Kattava selvitys toimistonne AI-valmiudesta konkreettisine toimenpide-ehdotuksineen.",
-                price: "1 990 € / kiinteä hinta",
+                title: "Tekoälyjärjestelmä ilmaiseksi",
+                body: "Rakennamme, käyttöönotamme ja ylläpidämme tekoälyjärjestelmän teidän tilitoimistossanne. Reteneri käynnistyy vasta kun 30 tuntia säästyy. Jos ei säästy, ette maksa mitään.",
+                price: "Ilmainen setup · €2 000–2 500 /kk",
                 featured: true,
               },
               {
@@ -432,14 +430,14 @@ function Home() {
               },
               {
                 title: "Koulutus ja työpajat",
-                body: "Strukturoidut ohjelmat, joissa tiimienne ymmärrys AI-työkaluista syvenee — ei vain pintaraapaisu.",
-                price: "Tarjouksen mukaan",
+                body: "Strukturoidut ohjelmat, joissa tiimienne ymmärrys AI-työkaluista syvenee aidosti. Räätälöity toimistonne työnkulkuihin.",
+                price: "1 500–2 200 €",
                 featured: false,
               },
               {
-                title: "Strateginen kumppanuus",
-                body: "Tulemme toimistonne jatkuvaksi AI-kumppaniksi — ohjaamme kehityspolkuanne kuukausittain teknologian kehittyessä.",
-                price: "Kuukausisopimus",
+                title: "AI-mahdollisuuskartoitus",
+                body: "Vaihtoehtoinen aloituspiste. Strukturoitu selvitys toimistonne AI-valmiudesta. Kartoituksen löydökset ohjaavat tekoälyjärjestelmän rakentamista.",
+                price: "1 990 € · Valinnainen",
                 featured: false,
               },
             ].map((s, i) => (
@@ -587,7 +585,7 @@ function Home() {
               className="text-[28px] md:text-[48px] lg:text-[56px] leading-tight max-w-4xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Haluatteko tietää, missä AI luo aitoa arvoa toimistossanne?
+              Haluatteko nähdä, miten järjestelmä toimii teidän toimistossanne?
             </h2>
           </FadeUp>
           <FadeUp delay={0.12}>
@@ -595,8 +593,7 @@ function Home() {
               className="mt-8 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.42)" }}
             >
-              Varatkaa 30 minuutin tutustumispuhelu. Kerromme rehellisesti,
-              sopiiko kartoitus Teille — ennen kuin sitoudutte mihinkään.
+              Varatkaa 30 minuutin tutustumispuhelu. Selvitetään yhdessä, mitkä prosessit kannattaa automatisoida ensin. Ei sitoumuksia.
             </p>
           </FadeUp>
           <FadeUp delay={0.24}>

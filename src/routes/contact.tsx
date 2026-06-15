@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Varatkaa 30 minuutin tutustumispuhelu. Helsinkiläinen AI-konsultointitoimisto, joka palvelee suomalaisia tilitoimistoja etänä tai paikan päällä.",
+          "Varatkaa 30 minuutin tutustumispuhelu. Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmiä ilmaiseksi — reteneri käynnistyy vasta kun 30 tuntia säästyy.",
       },
     ],
   }),
@@ -71,8 +71,7 @@ function ContactPage() {
               className="mt-8 text-lg max-w-xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Varatkaa 30 minuutin tutustumispuhelu. Selvitetään yhdessä,
-              sopiiko kartoitus Teille — ennen kuin sitoudutte mihinkään.
+              Varatkaa 30 minuutin tutustumispuhelu. Selvitetään yhdessä, sopiiko järjestelmä Teille ja mitkä prosessit kannattaa automatisoida ensin.
             </p>
           </FadeUp>
         </div>

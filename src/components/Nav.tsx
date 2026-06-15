@@ -82,7 +82,7 @@ export function Nav() {
                 : "bg-[color:var(--ink)] text-[color:var(--background)] border-[color:var(--ink)] hover:border-[color:var(--gold)]"
             }`}
           >
-            Varaa kartoitus
+            Varaa tutustumispuhelu
           </a>
         </nav>
 
@@ -116,7 +116,7 @@ export function Nav() {
               onClick={() => setOpen(false)}
               className="inline-flex items-center justify-center px-5 py-3 text-sm bg-[color:var(--ink)] text-[color:var(--background)]"
             >
-              Varaa kartoitus
+              Varaa tutustumispuhelu
             </a>
           </div>
         </div>
