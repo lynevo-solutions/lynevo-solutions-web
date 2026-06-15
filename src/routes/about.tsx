@@ -70,7 +70,7 @@ function AboutPage() {
               className="text-[30px] md:text-[46px] lg:text-[56px] leading-[1.05] max-w-5xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Olemme tekijöitä, emme konsultteja.
+              Haluamme palauttaa tilitoimistojen omistajille heidän aikansa.
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -78,7 +78,7 @@ function AboutPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Lynevo on kahden helsinkiläisen perustama. Molemmilla vahva myynti- ja liiketoimintatausta. Näimme selvän aukon: suomalaiset tilitoimistot tarvitsevat tekoälytoteutuksia, eivät konsultointimuistioita.
+              Lynevo syntyi, kun näimme saman asian yhä uudelleen. Tilitoimistoilla on valtava määrä toistuvaa manuaalista työtä, joka voidaan automatisoida — mutta kukaan ei ole rakentanut sitä heille. Haluamme muuttaa sen.
             </p>
           </FadeUp>
         </div>
