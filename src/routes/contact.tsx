@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Varatkaa 30 minuutin tutustumispuhelu. Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmiä ilmaiseksi — reteneri käynnistyy vasta kun 30 tuntia säästyy.",
+          "Varatkaa 30 minuutin tutustumispuhelu. Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmiä ilmaiseksi — kuukausisopimus käynnistyy vasta kun 30 tuntia säästyy.",
       },
     ],
   }),

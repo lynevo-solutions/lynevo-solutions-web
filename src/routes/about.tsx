@@ -70,8 +70,7 @@ function AboutPage() {
               className="text-[30px] md:text-[46px] lg:text-[56px] leading-[1.05] max-w-5xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Olemme tekijöitä — emme konsultteja, jotka eivät ole koskaan
-              saaneet kauppoja kotiin.
+              Olemme tekijöitä, emme konsultteja.
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -79,11 +78,7 @@ function AboutPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Lynevo rakennettiin kahden henkilön toimesta, joilla on syvä
-              myynti- ja liiketoiminnan kehittämistausta. Näimme selvän aukon:
-              suomalaiset yritykset tarvitsevat AI-ohjausta ihmisiltä, jotka
-              ymmärtävät suomalaisen markkinan — ei Silicon Valleyn
-              pelikirjoista tuotuja viitekehyksiä.
+              Lynevo on kahden helsinkiläisen perustama. Molemmilla vahva myynti- ja liiketoimintatausta. Näimme selvän aukon: suomalaiset tilitoimistot tarvitsevat tekoälytoteutuksia, eivät konsultointimuistioita.
             </p>
           </FadeUp>
         </div>
@@ -100,7 +95,7 @@ function AboutPage() {
           <div className="md:col-span-8">
             <FadeUp delay={0.1}>
               <p className="text-[22px] md:text-[26px] leading-snug font-serif text-[color:var(--ink)]">
-                Emme myy tekoälyä teoriana. Rakennamme järjestelmiä, jotka tuottavat mitattavia tuloksia. Jokainen asiakas saa tekoälyjärjestelmän ilmaiseksi — ja reteneri käynnistyy vasta kun 30 tunnin kuukausisäästö on objektiivisesti vahvistettu. Jos emme saa sitä aikaan, ette maksa mitään.
+                Emme myy tekoälyä teoriana. Rakennamme järjestelmiä. Jokainen asiakas saa tekoälyjärjestelmän ilmaiseksi — kuukausisopimus käynnistyy vasta kun ROI-raportti vahvistaa 30 tunnin säästön. Jos emme pääse tavoitteeseen, ette maksa mitään.
               </p>
             </FadeUp>
           </div>
@@ -118,11 +113,7 @@ function AboutPage() {
           <div className="md:col-span-8">
             <FadeUp delay={0.1}>
               <p className="text-xl md:text-2xl leading-relaxed text-[color:var(--ink)]">
-                Tilitoimistot ovat yksi Suomen AI-valmiimmista sektoreista —
-                suuri volyymi, toistuvat työnkulut, aikapaine ja asiakaskunta,
-                joka palkitsee tehokkuuden. Ne ovat myös alipalveltu
-                konsulttien toimesta, jotka oikeasti ymmärtävät alan. Tämä on
-                aukko, jonka täytämme.
+                Tilitoimistoilla on enemmän toistuvaa manuaalista työtä kuin millään muulla pienyrityskentässä. Laskut, palkanlaskenta, ALV, raportointi — sama työ, joka kuukausi. Juuri siksi automaatio tuottaa täällä eniten ja nopeimmin. Kukaan muu ei rakenna juuri tähän markkinarakoon. Siksi me teemme.
               </p>
             </FadeUp>
           </div>
@@ -165,8 +156,8 @@ function AboutPage() {
                 "Kerromme Teille, mitä oikeasti ajattelemme.",
               ],
               [
-                "Kiinteä laajuus, kiinteä hinta",
-                "Sovittu laajuus ei kasva. Koskaan.",
+                "Tulos ensin, lasku sitten",
+                "Ette maksa ennen kuin 30 tuntia säästyy. Takuu kirjataan sopimukseen, ei lupauksena vaan ehtona.",
               ],
               [
                 "Suomi ensin",

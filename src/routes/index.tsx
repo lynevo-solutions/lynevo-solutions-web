@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmän ilmaiseksi. Jos se ei säästä tiimiänne 30 tuntia ensimmäisessä kuukaudessa, ette maksa mitään.",
+          "Rakennamme suomalaisille tilitoimistoille tekoälyjärjestelmän ilmaiseksi. 30 tuntia säästöä ensimmäisessä kuukaudessa tai ette maksa mitään.",
       },
     ],
   }),
@@ -150,7 +150,7 @@ const TRUST = [
   "30 tuntia säästöä tai ette maksa mitään",
   "Ei sitoumuksia",
   "Suomalaisille tilitoimistoille",
-  "Reteneri käynnistyy vasta kun tulokset on todistettu",
+  "Kuukausisopimus käynnistyy vasta kun tulokset on todistettu",
 ];
 
 function TrustMarquee() {
@@ -248,11 +248,11 @@ function Home() {
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[50px] leading-[1.08] text-white">
               <LineReveal delay={T_L1}>
-                Tekoälyjärjestelmä teidän tilitoimistolle.
+                Rakennamme teidän tilitoimistolle tekoälyjärjestelmän.
               </LineReveal>
               <LineReveal delay={T_L2}>
                 <em className="not-italic font-serif" style={{ color: "var(--gold)" }}>
-                  Ilmaiseksi. Tuloksiin sidottu.
+                  Ilmaiseksi.
                 </em>
               </LineReveal>
             </h1>
@@ -314,16 +314,15 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <h2 className="text-[28px] md:text-[44px] leading-tight max-w-4xl">
-              Suomalaiset tilitoimistot käyttävät manuaalisia prosesseja, jotka
-              tekoäly on jo ratkaissut — he eivät vain tiedä mitkä.
+              Tilitoimistoilla on yksi ongelma tekoälyssä.
             </h2>
           </FadeUp>
 
           <div className="mt-24 grid gap-0 md:grid-cols-3 border-t border-[color:var(--divider)]">
             {[
-              ["01", "Aikaa kuluu toistuviin tehtäviin, joita tiimin ei pitäisi tehdä."],
-              ["02", "Ei selkeää kuvaa siitä, missä tekoäly oikeasti luo arvoa — ja missä se on pelkkää hypeä."],
-              ["03", "Jokainen viikko ilman päätöstä on menetettyä tulosta."],
+              ["01", "Laskujen syöttö, palkanlaskenta, ALV-ilmoitukset, asiakkaiden dokumenttien metsästys. Tiimiltänne menee joka viikko tunteja tehtäviin, jotka voidaan automatisoida."],
+              ["02", "Procountorissa, Netvisorissa ja Fennoassa on jo tekoälyominaisuuksia. Useimmat tilitoimistot eivät tiedä mitä niissä on tai miten niistä saa mitään irti. Ohjelmistot kehittyvät. Käyttö ei."],
+              ["03", "Joka kuukausi ilman automaatiota on kuukausi, jonka tiimiltänne menee väärään paikkaan. Kilpailijat eivät odota."],
             ].map(([n, t], i) => (
               <FadeUp key={n} delay={i * 0.1}>
                 <div
@@ -364,7 +363,7 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <h2 className="text-[28px] md:text-[44px] leading-tight max-w-4xl">
-              Ilmainen setup. Mitattu tulos. Reteneri vasta kun 30 tuntia säästyy.
+              Kolme vaihetta. Ensimmäinen kuukausi ilmaiseksi.
             </h2>
           </FadeUp>
 
@@ -372,18 +371,18 @@ function Home() {
             {[
               {
                 step: "Vaihe 1",
-                title: "Kartoitus ja setup",
-                body: "Selvitetään yhdessä, mitkä prosessit kannattaa automatisoida ensin. Rakennamme tekoälyjärjestelmän ja yhdistämme sen ohjelmistoihinne — Procountor, Netvisor, Fennoa, Visma tai Fivaldi. Valmis 5 arkipäivässä.",
+                title: "Selvitetään yhdessä",
+                body: "Käymme läpi, mitkä prosessit toimistossanne vievät eniten aikaa. Procountor, Netvisor, Fennoa vai jokin muu — tunnistamme mihin rakennetaan. Puoli tuntia. Ei sitoumuksia.",
               },
               {
                 step: "Vaihe 2",
-                title: "Ensimmäinen kuukausi",
-                body: "Automaatiot käynnissä. Säästetyt tunnit mitataan objektiivisesti koko kuukauden ajan. Seuraamme aktiivisesti, että kaikki toimii.",
+                title: "Rakennamme järjestelmän",
+                body: "Rakennamme tekoälyjärjestelmän ja yhdistämme sen ohjelmistoihinne. Kaikki testattu ennen kuin tiimistänne kukaan näkee sen. Valmis viidessä arkipäivässä.",
               },
               {
                 step: "Vaihe 3",
-                title: "ROI-raportti ja päätös",
-                body: "Jos tiimistänne on säästynyt 30 tuntia tai enemmän, reteneri käynnistyy automaattisesti sovittuun hintaan. Jos ei, ette maksa mitään ja pidätte kaiken.",
+                title: "30 päivää — sitten päätös",
+                body: "Kuukauden kuluttua katsomme ROI-raportin: kuinka monta tuntia säästyi. Jos 30 tuntia tai enemmän — kuukausisopimus käynnistyy. Jos alle — ette maksa mitään ja pidätte kaiken.",
               },
             ].map((s, i) => (
               <FadeUp key={s.title} delay={i * 0.1}>
@@ -410,7 +409,7 @@ function Home() {
           </FadeUp>
           <FadeUp delay={0.12}>
             <h2 className="text-[28px] md:text-[44px] leading-tight max-w-3xl">
-              Rakennettu toimistoille, jotka ovat valmiita liikkumaan — ei vain tutkimaan.
+              Rakennettu suomalaisille tilitoimistoille.
             </h2>
           </FadeUp>
 
@@ -418,8 +417,8 @@ function Home() {
             {[
               {
                 title: "Tekoälyjärjestelmä ilmaiseksi",
-                body: "Rakennamme, käyttöönotamme ja ylläpidämme tekoälyjärjestelmän teidän tilitoimistossanne. Reteneri käynnistyy vasta kun 30 tuntia säästyy. Jos ei säästy, ette maksa mitään.",
-                price: "Ilmainen setup · €2 000–2 500 /kk",
+                body: "Rakennamme, käyttöönotamme ja ylläpidämme tekoälyjärjestelmän teidän tilitoimistossanne. Kuukausisopimus käynnistyy vasta kun 30 tuntia säästyy. Jos ei säästy, ette maksa mitään.",
+                price: "Ilmainen setup · Tuloksiin sidottu",
                 featured: true,
               },
               {
@@ -431,13 +430,7 @@ function Home() {
               {
                 title: "Koulutus ja työpajat",
                 body: "Strukturoidut ohjelmat, joissa tiimienne ymmärrys AI-työkaluista syvenee aidosti. Räätälöity toimistonne työnkulkuihin.",
-                price: "1 500–2 200 €",
-                featured: false,
-              },
-              {
-                title: "AI-mahdollisuuskartoitus",
-                body: "Vaihtoehtoinen aloituspiste. Strukturoitu selvitys toimistonne AI-valmiudesta. Kartoituksen löydökset ohjaavat tekoälyjärjestelmän rakentamista.",
-                price: "1 990 € · Valinnainen",
+                price: "Tarjouksen mukaan",
                 featured: false,
               },
             ].map((s, i) => (
@@ -513,8 +506,7 @@ function Home() {
               className="text-[28px] md:text-[44px] leading-tight max-w-4xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Ymmärrämme suomalaisen liiketoiminnan. Toimimme nopeasti. Toimitamme
-              työn, jonka voitte viedä käytäntöön.
+              Suomalainen. Rakentava. Tuloksiin sidottu.
             </h2>
           </FadeUp>
 
@@ -522,15 +514,15 @@ function Home() {
             {[
               [
                 "Suomi ensin",
-                "Tunnemme tilitoimistomarkkinan, sen ostajat ja alan arjen haasteet. Useimmat AI-konsultit eivät tunne.",
+                "Tunnemme tilitoimistot, niiden ohjelmistot ja arjen haasteet. Procountor, Netvisor, Fennoa, Visma, Fivaldi. Nämä eivät ole nimiä — ne ovat järjestelmiä, joihin rakennamme.",
               ],
               [
-                "Myyntilähtöinen, ei teorialähtöinen",
-                "Olemme sulkeneet kauppoja. Tiedämme, miten AI-osaaminen käännetään liiketoimintakielelle, joka puhuttelee asiakkaitanne.",
+                "Rakennamme itse",
+                "Rakennamme jokaisen järjestelmän itse — saman, jonka olemme rakentaneet omaan liiketoimintaamme. Ei konsultointia. Ei alakonsultteja. Yksi tekijä, täysi vastuu.",
               ],
               [
-                "Kiinteät toimitukset",
-                "Ei epämääräisiä toimeksiantoja. Tiedätte tarkalleen, mitä saatte ja milloin.",
+                "Nolla riskiä",
+                "30 tuntia ensimmäisessä kuukaudessa tai ette maksa mitään. Mittausmenetelmä kirjataan sopimukseen ennen aloittamista.",
               ],
             ].map(([t, b], i) => (
               <FadeUp key={t} delay={i * 0.1}>
@@ -620,7 +612,7 @@ function Home() {
                 className="mt-6 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.25)" }}
               >
-                Ei sitoumuksia. Ei myyntipainetta. Suora keskustelu.
+                Ei sitoumuksia. Ei myyntipainetta.
               </p>
             </div>
           </FadeUp>

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Tekoälyjärjestelmä suomalaisille tilitoimistoille. Ilmainen setup, tuloksiin sidottu reteneri. Ei aloitusmaksua, ei riskiä.",
+          "Tekoälyjärjestelmä suomalaisille tilitoimistoille. Ilmainen setup, tuloksiin sidottu kuukausisopimus. 30 tuntia säästöä tai ette maksa mitään.",
       },
     ],
   }),
@@ -22,7 +22,7 @@ function ServicesPage() {
   const included = [
     "1–2 uutta automaatiota rakennettuna ja käyttöönotettuna kuukausittain",
     "Kaikki olemassa olevat automaatiot ylläpidettynä ja seurattuna",
-    "Kuukausittainen strategiapuhelu (30 min) — Amin valmistelee ja johtaa",
+    "Kuukausittainen strategiapuhelu (30 min)",
     "ROI-raportti joka kuukausi. Objektiivinen mittaus säästetystä ajasta ja euroista.",
     "Saman päivän vastaus kaikkiin kysymyksiin toimistoaikana",
     "24 tunnin korjaus, jos jokin hajoaa. Ilman lisäveloitusta.",
@@ -31,19 +31,19 @@ function ServicesPage() {
 
   const ladder = [
     {
+      step: "01",
+      title: "Setup",
+      body: "Rakennamme tekoälyjärjestelmän ja otamme ensimmäiset automaatiot käyttöön. Ei aloitusmaksua, ei sitoumuksia.",
+    },
+    {
       step: "02",
-      title: "Käyttöönotto",
-      body: "Otamme käyttöön suositellut työkalut ja koulutamme tiimienne käyttämään niitä itsenäisesti — hidastamatta toimintaanne.",
+      title: "Ensimmäinen kuukausi",
+      body: "Automaatiot käynnissä. Seuraamme aktiivisesti. Säästetyt tunnit mitataan ROI-raportissa koko kuukauden ajan.",
     },
     {
       step: "03",
-      title: "Koulutus ja työpajat",
-      body: "Strukturoidut ohjelmat, joissa tiimienne ymmärrys AI-työkaluista syvenee aidosti — ei pelkkä pintaraapaisu. Räätälöity toimistonne työnkulkuihin.",
-    },
-    {
-      step: "04",
-      title: "AI-mahdollisuuskartoitus",
-      body: "Valinnainen aloituspiste asiakkaille, jotka haluavat selvyyden ennen sitoutumista. Strukturoitu selvitys toimistonne AI-valmiudesta. Kartoituksen löydökset ohjaavat suoraan tekoälyjärjestelmän rakentamista. 1 990 €.",
+      title: "Kuukausisopimus",
+      body: "Alkaa kun ROI-raportti vahvistaa 30 tunnin säästön. Jos tavoite ei toteudu — ette maksa mitään ja pidätte kaiken minkä rakensimme.",
     },
   ];
 
@@ -99,7 +99,7 @@ function ServicesPage() {
               className="text-[30px] md:text-[46px] lg:text-[56px] leading-[1.05] max-w-5xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Tekoälyjärjestelmä teidän toimistolle. Ilmaiseksi. Tuloksiin sidottuna.
+              Yksi palvelu. Yksi takuu. Nolla riskiä.
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -119,11 +119,11 @@ function ServicesPage() {
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-7">
               <FadeUp>
-                <p className="eyebrow mb-6">Pääpalvelu · 01</p>
+                <p className="eyebrow mb-6">Palvelumme</p>
               </FadeUp>
               <FadeUp delay={0.1}>
                 <h2 className="text-[30px] md:text-[48px] leading-tight">
-                  Tekoälyjärjestelmä ilmaiseksi. Reteneri vasta kun tulokset on todistettu.
+                  Tekoälyjärjestelmä ilmaiseksi. Kuukausisopimus vasta kun tulokset on todistettu.
                 </h2>
               </FadeUp>
               <FadeUp delay={0.15}>
@@ -135,7 +135,7 @@ function ServicesPage() {
                     className="text-sm tracking-wide"
                     style={{ color: "var(--warm)" }}
                   >
-                    reteneri käynnistyy päivänä 31
+                    kuukausisopimus käynnistyy päivänä 31
                   </span>
                 </div>
               </FadeUp>
@@ -150,7 +150,7 @@ function ServicesPage() {
 
               <FadeUp delay={0.25}>
                 <div className="mt-12">
-                  <p className="eyebrow mb-6">Mitä kuukausireteneri sisältää</p>
+                  <p className="eyebrow mb-6">Mitä kuukausisopimus sisältää</p>
                   <ul
                     className="divide-y border-t"
                     style={{
@@ -244,14 +244,14 @@ function ServicesPage() {
 
         <div className="container-novera relative" style={{ zIndex: 1 }}>
           <FadeUp>
-            <p className="eyebrow mb-8">Palvelupolku</p>
+            <p className="eyebrow mb-8">Takuu</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <h2
               className="text-[28px] md:text-[44px] leading-tight max-w-3xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Täydentävät palvelut
+              Takuu, joka on kirjattu sopimukseen.
             </h2>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -259,7 +259,7 @@ function ServicesPage() {
               className="mt-6 text-sm tracking-wider"
               style={{ color: "rgba(255,255,255,0.40)" }}
             >
-              Reteneri on pääpalvelumme. Alla täydentävät palvelut, joita tarjoamme tarpeen mukaan.
+              Rakennamme ilmaiseksi. Kuukausisopimus alkaa vasta kun 30 tunnin säästö on todistettu. Kirjataan sopimukseen ennen aloittamista.
             </p>
           </FadeUp>
 
@@ -307,7 +307,7 @@ function ServicesPage() {
                     className="md:col-span-1 text-sm md:text-right"
                     style={{ color: "rgba(255,255,255,0.30)" }}
                   >
-                    Tarjous
+                    →
                   </div>
                 </div>
               </FadeUp>
