@@ -25,14 +25,20 @@ export const Route = createFileRoute("/tietosuojaseloste")({
 
 const DARK = "#0B0A08";
 
+const sub = (text: string) => (
+  <p className="font-serif text-lg mt-6 mb-2" style={{ color: "var(--ink)" }}>
+    {text}
+  </p>
+);
+
 const sections = [
   {
-    eyebrow: "Rekisterinpitäjä",
+    eyebrow: "1. Rekisterinpitäjä",
     content: (
       <>
-        <p>Lynevo Solutions</p>
+        <p>Lynevo Solutions Oy</p>
         <p>Y-tunnus: 3629364-2</p>
-        <p>Helsinki, Suomi</p>
+        <p>Harjannetie 44 C 66, 00710 Helsinki</p>
         <p>
           Sähköposti:{" "}
           <a
@@ -42,164 +48,67 @@ const sections = [
             hello@lynevo.fi
           </a>
         </p>
-      </>
-    ),
-  },
-  {
-    eyebrow: "Yhteyshenkilö rekisteriä koskevissa asioissa",
-    content: (
-      <>
-        <p>
-          Sähköposti:{" "}
-          <a
-            href="mailto:hello@lynevo.fi"
-            className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
-          >
-            hello@lynevo.fi
-          </a>
-        </p>
-        <p>
-          Vastaamme tietosuojaa koskeviin kysymyksiin yhden arkipäivän
+        <p className="mt-4">
+          Vastaamme tietosuojaa koskeviin kysymyksiin viiden arkipäivän
           kuluessa.
         </p>
       </>
     ),
   },
   {
-    eyebrow: "Rekisterin nimi",
-    content: (
-      <p>
-        Lynevo Solutions asiakasrekisteri ja yhteydenottolomakkeen tiedot.
-      </p>
-    ),
-  },
-  {
-    eyebrow: "Henkilötietojen käsittelyn tarkoitus",
+    eyebrow: "2. Käsiteltävät henkilötiedot",
     content: (
       <>
-        <p>Keräämme henkilötietoja ainoastaan seuraaviin tarkoituksiin:</p>
-        <ul className="mt-3 space-y-1.5 list-disc pl-5">
-          <li>Yhteydenottolomakkeen kautta lähetettyihin viesteihin vastaaminen</li>
-          <li>Potentiaalisten asiakkaiden yhteydenottojen hallinta</li>
-          <li>Sovittujen tapaamisten järjestäminen</li>
-        </ul>
-        <p className="mt-4">
-          Tietoja ei käytetä suoramarkkinointiin ilman erillistä suostumusta.
-        </p>
-      </>
-    ),
-  },
-  {
-    eyebrow: "Rekisterin tietosisältö",
-    content: (
-      <>
-        <p>Voimme kerätä seuraavia tietoja:</p>
+        <p>Käsittelemme kahta erillistä henkilötietoryhmää.</p>
+
+        {sub("Prospektitiedot")}
+        <p>Keräämme potentiaalisista asiakkaista seuraavat tiedot:</p>
         <ul className="mt-3 space-y-1.5 list-disc pl-5">
           <li>Etunimi ja sukunimi</li>
           <li>Yrityksen nimi</li>
           <li>Sähköpostiosoite</li>
-          <li>Yhteydenottoviestin sisältö</li>
+          <li>Puhelinnumero</li>
+          <li>Myyntiprosessiin liittyvät muistiinpanot ja yhteydenottotiedot</li>
         </ul>
-        <p className="mt-4">Emme kerää arkaluonteisia henkilötietoja.</p>
-      </>
-    ),
-  },
-  {
-    eyebrow: "Säännönmukaiset tietolähteet",
-    content: (
-      <p>
-        Tiedot kerätään suoraan rekisteröidyltä itseltään verkkosivustomme
-        yhteydenottolomakkeen kautta.
-      </p>
-    ),
-  },
-  {
-    eyebrow: "Tietojen säilytysaika",
-    content: (
-      <p>
-        Säilytämme henkilötietoja niin kauan kuin on tarpeen yhteydenoton
-        käsittelemiseksi ja mahdollisen asiakassuhteen hoitamiseksi —
-        kuitenkin enintään 24 kuukautta viimeisestä kontaktista. Tämän
-        jälkeen tiedot poistetaan.
-      </p>
-    ),
-  },
-  {
-    eyebrow: "Tietojen säännönmukaiset luovutukset",
-    content: (
-      <>
+
+        {sub("Asiakastiedot")}
         <p>
-          Emme luovuta, myy tai vuokraa henkilötietoja kolmansille osapuolille.
-          Käytämme seuraavia kolmannen osapuolen palveluita lomakkeen
-          käsittelyyn:
+          Osana tekoälyjärjestelmäpalvelun käyttöönottoa ja ylläpitoa
+          käsittelemme asiakasyrityksen toimittamia tai sen järjestelmistä
+          saatavia tietoja. Nämä tiedot voivat sisältää:
         </p>
         <ul className="mt-3 space-y-1.5 list-disc pl-5">
-          <li>
-            Formspree (lomakkeiden käsittely) — tietosuojaseloste:{" "}
-            <a
-              href="https://formspree.io/legal/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
-            >
-              formspree.io/legal/privacy-policy
-            </a>
-          </li>
-          <li>
-            Cal.com (ajanvaraukset) — tietosuojaseloste:{" "}
-            <a
-              href="https://cal.com/privacy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
-            >
-              cal.com/privacy
-            </a>
-          </li>
+          <li>Taloushallinnon asiakirjat ja kirjanpitoaineistot</li>
+          <li>Palkanlaskenta-aineistot sekä Tulorekisteri-ilmoituksiin liittyvät tiedot</li>
+          <li>Arvonlisäverotiedot ja -ilmoitukset</li>
+          <li>Asiakasyrityksen ja sen asiakkaiden välinen viestintä sekä asiakirjat</li>
         </ul>
         <p className="mt-4">
-          Nämä palvelut käsittelevät tietoja omien tietosuojakäytäntöjensä
-          mukaisesti.
+          Asiakastietojen osalta Lynevo Solutions Oy toimii henkilötietojen
+          käsittelijänä (GDPR artikla 28). Asiakasyritys on näiden tietojen
+          rekisterinpitäjä ja vastaa siitä, että tietojen käsittelylle on
+          lainmukainen peruste.
         </p>
       </>
     ),
   },
   {
-    eyebrow: "Tietojen siirto EU:n ulkopuolelle",
-    content: (
-      <p>
-        Lomakkeiden käsittelyyn käyttämämme palvelut voivat sijaita EU:n
-        ulkopuolella. Nämä palveluntarjoajat noudattavat GDPR:n mukaisia
-        tietosuojaperiaatteita ja EU:n komission hyväksymiä
-        tiedonsiirtomekanismeja.
-      </p>
-    ),
-  },
-  {
-    eyebrow: "Rekisterin suojauksen periaatteet",
-    content: (
-      <p>
-        Henkilötietoja käsitellään luottamuksellisesti. Pääsy tietoihin on
-        rajattu ainoastaan Lynevo Solutionsin perustajille, joilla on tarve
-        käsitellä tietoja työtehtäviensä vuoksi.
-      </p>
-    ),
-  },
-  {
-    eyebrow: "Rekisteröidyn oikeudet",
+    eyebrow: "3. Käsittelyn tarkoitus ja oikeusperuste",
     content: (
       <>
-        <p>Teillä on seuraavat oikeudet henkilötietojenne suhteen:</p>
-        <ul className="mt-3 space-y-1.5 list-disc pl-5">
-          <li>Oikeus tarkastaa itseään koskevat tiedot</li>
-          <li>Oikeus vaatia virheellisten tietojen oikaisemista</li>
-          <li>Oikeus vaatia tietojen poistamista</li>
-          <li>Oikeus rajoittaa tietojen käsittelyä</li>
-          <li>Oikeus siirtää tiedot järjestelmästä toiseen</li>
-          <li>Oikeus vastustaa tietojen käsittelyä</li>
-        </ul>
+        {sub("Prospektitiedot")}
+        <p>
+          Käsittelemme prospektitietoja myynti- ja markkinointitoimintamme
+          toteuttamiseksi sekä mahdollisten asiakassuhteiden hoitamiseksi.
+          Käsittelyn oikeusperuste on oikeutettu etu (GDPR artikla 6(1)(f)).
+          Meillä on oikeutettu liiketoiminnallinen intressi ottaa yhteyttä
+          yrityksiin, joille palvelumme voi tuottaa merkittävää hyötyä. Tämä
+          intressi ei ylitä rekisteröityjen kohtuullisia odotuksia
+          B2B-ympäristössä.
+        </p>
         <p className="mt-4">
-          Pyyntöjen käsittelyaika on enintään 30 päivää. Lähettäkää pyyntönne
+          Teillä on milloin tahansa oikeus vastustaa tietojenne käsittelyä
+          suoramarkkinointitarkoituksiin. Pyyntö voidaan lähettää
           osoitteeseen{" "}
           <a
             href="mailto:hello@lynevo.fi"
@@ -207,22 +116,143 @@ const sections = [
           >
             hello@lynevo.fi
           </a>
-          .
+          , minkä jälkeen tietoja ei enää käsitellä kyseiseen tarkoitukseen.
+        </p>
+
+        {sub("Asiakastiedot")}
+        <p>
+          Käsittelemme asiakastietoja asiakassopimuksen täytäntöönpanemiseksi
+          (GDPR artikla 6(1)(b)). Käsittely on välttämätöntä sovitun palvelun
+          toimittamiseksi.
         </p>
       </>
     ),
   },
   {
-    eyebrow: "Oikeus tehdä valitus valvontaviranomaiselle",
+    eyebrow: "4. Tietojen vastaanottajat ja tietojen sijainti",
     content: (
       <>
         <p>
-          Teillä on oikeus tehdä valitus tietosuojavaltuutetulle, jos
+          Käytämme seuraavia alihankkijoita henkilötietojen käsittelyssä.
+          Emme myy, vuokraa tai luovuta henkilötietoja muille kolmansille
+          osapuolille.
+        </p>
+
+        {sub("Microsoft Azure — Finland Central (Suomi)")}
+        <p>
+          Tekoälyjärjestelmän infrastruktuuri sekä asiakastietojen tallennus
+          ja käsittely. Tiedot sijaitsevat Suomessa. EU:n tietosuojasäännöt
+          soveltuvat täysimääräisesti.
+        </p>
+
+        {sub("Anthropic PBC (Yhdysvallat)")}
+        <p>
+          Tekoälyjärjestelmän kielimallipalvelut. Käsittelemiämme
+          asiakastietoja välitetään Anthropicin API-rajapinnan kautta
+          tekoälyprosessoinnin ajaksi. Käsittely tapahtuu Yhdysvalloissa.
+          Tiedonsiirto perustuu Euroopan komission hyväksymiin
+          vakiosopimuslausekkeisiin (SCC, GDPR artikla 46(2)(c)). Anthropic
+          ei käytä API-rajapinnan kautta välitettyjä tietoja
+          tekoälymallien kouluttamiseen.
+        </p>
+
+        {sub("Google LLC — Google Workspace (Yhdysvallat)")}
+        <p>
+          Sähköposti- ja kalenteripalvelut sisäiseen viestintään.
+          Tiedonsiirto perustuu vakiosopimuslausekkeisiin (SCC).
+        </p>
+      </>
+    ),
+  },
+  {
+    eyebrow: "5. Tietojen säilytysaika",
+    content: (
+      <>
+        {sub("Prospektitiedot")}
+        <p>
+          Säilytämme tietoja aktiivisen myynti- ja yhteydenottoprosessin ajan
+          sekä 12 kuukautta viimeisestä yhteydenotosta tai myyntiprosessin
+          päättymisestä. Mikäli rekisteröity pyytää tietojen poistamista,
+          poistamme tiedot 30 päivän kuluessa pyynnöstä.
+        </p>
+
+        {sub("Asiakastiedot")}
+        <p>
+          Poistamme kaikki asiakkaan toimittamat tai asiakkaan järjestelmistä
+          käsitellyt henkilötiedot 30 päivän kuluessa sopimussuhteen
+          päättymisestä. Asiakas saa kirjallisen vahvistuksen poistosta.
+        </p>
+      </>
+    ),
+  },
+  {
+    eyebrow: "6. Rekisteröidyn oikeudet",
+    content: (
+      <>
+        <p>Teillä on seuraavat oikeudet henkilötietojenne suhteen:</p>
+        <ul className="mt-3 space-y-1.5 list-disc pl-5">
+          <li>
+            <strong>Tarkastusoikeus:</strong> Oikeus saada tieto siitä, mitä
+            tietoja teistä käsittelemme.
+          </li>
+          <li>
+            <strong>Oikaisupyyntö:</strong> Oikeus vaatia virheellisten tai
+            puutteellisten tietojen korjaamista.
+          </li>
+          <li>
+            <strong>Poistopyyntö:</strong> Oikeus vaatia tietojenne
+            poistamista, ellei käsittelylle ole lakisääteistä perustetta.
+          </li>
+          <li>
+            <strong>Käsittelyn rajoittaminen:</strong> Oikeus pyytää tietojen
+            käsittelyn rajoittamista tietyissä tilanteissa.
+          </li>
+          <li>
+            <strong>Tietojen siirrettävyys:</strong> Oikeus saada teidät
+            koskevat tiedot koneluettavassa muodossa.
+          </li>
+          <li>
+            <strong>Vastustamisoikeus:</strong> Oikeus vastustaa tietojen
+            käsittelyä, kun käsittely perustuu oikeutettuun etuun.
+          </li>
+        </ul>
+        <p className="mt-4">
+          Lähetä pyyntö sähköpostitse osoitteeseen{" "}
+          <a
+            href="mailto:hello@lynevo.fi"
+            className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
+          >
+            hello@lynevo.fi
+          </a>
+          . Käsittelemme pyynnöt 30 päivän kuluessa vastaanottamisesta.
+        </p>
+      </>
+    ),
+  },
+  {
+    eyebrow: "7. Tietosuojavaltuutetun yhteystiedot",
+    content: (
+      <>
+        <p>
+          Teillä on oikeus tehdä valitus tietosuojavaltuutetulle, mikäli
           katsotte, että henkilötietojenne käsittelyssä on rikottu
           tietosuojalainsäädäntöä.
         </p>
-        <p className="mt-4">
-          Tietosuojavaltuutetun toimisto:{" "}
+        <p className="mt-4">Tietosuojavaltuutetun toimisto</p>
+        <p>Lintulahdenkuja 4, 00530 Helsinki</p>
+        <p>PL 800, 00531 Helsinki</p>
+        <p>Puhelin: 029 566 6700</p>
+        <p>
+          Sähköposti:{" "}
+          <a
+            href="mailto:tietosuoja@om.fi"
+            className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
+          >
+            tietosuoja@om.fi
+          </a>
+        </p>
+        <p>
+          Verkkosivusto:{" "}
           <a
             href="https://tietosuoja.fi"
             target="_blank"
@@ -236,28 +266,30 @@ const sections = [
     ),
   },
   {
-    eyebrow: "Evästeet",
+    eyebrow: "8. Evästeet",
     content: (
       <p>
         Verkkosivustomme ei tällä hetkellä käytä seurantaevästeitä tai
-        analytiikkatyökaluja. Jos tämä muuttuu, päivitämme tämän selosteen ja
-        lisäämme asianmukaisen evästeilmoituksen.
+        analytiikkatyökaluja. Mikäli tämä muuttuu, päivitämme tämän selosteen
+        ja lisäämme asianmukaisen evästeilmoituksen ennen muutoksen
+        voimaantuloa.
       </p>
     ),
   },
   {
-    eyebrow: "Tietosuojaselosteen muutokset",
+    eyebrow: "9. Tietosuojaselosteen päivittäminen",
     content: (
       <p>
-        Pidätämme oikeuden päivittää tätä tietosuojaselostetta. Viimeisin
-        versio on aina saatavilla osoitteessa{" "}
+        Päivitämme tätä tietosuojaselostetta tarvittaessa liiketoimintamme
+        tai lainsäädännön muuttuessa. Viimeisin versio on aina saatavilla
+        osoitteessa{" "}
         <a
           href="https://lynevo.fi/tietosuojaseloste"
           className="underline underline-offset-4 hover:text-[color:var(--gold)] transition-colors"
         >
           lynevo.fi/tietosuojaseloste
         </a>
-        . Viimeksi päivitetty: toukokuu 2026.
+        . Viimeksi päivitetty: kesäkuu 2026.
       </p>
     ),
   },
