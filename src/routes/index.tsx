@@ -248,12 +248,7 @@ function Home() {
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[50px] leading-[1.08] text-white">
               <LineReveal delay={T_L1}>
-                Rakennamme teidän tilitoimistolle järjestelmän.
-              </LineReveal>
-              <LineReveal delay={T_L2}>
-                <em className="not-italic font-serif" style={{ color: "var(--gold)" }}>
-                  Ilmaiseksi.
-                </em>
+                Autamme tilitoimistoja siirtymään manuaalisesta työstä tehokkaampaan arkeen
               </LineReveal>
             </h1>
 
@@ -268,7 +263,7 @@ function Home() {
             {/* Subheading */}
             <ClipReveal delay={T_SUB} className="mt-10">
               <p className="text-[17px] leading-relaxed" style={{ color: "rgba(255,255,255,0.52)" }}>
-                Me rakennamme teidän firmaan tekoälyjärjestelmän ilmaiseksi — ja jos se ei säästä tiimiänne 30 tuntia ensimmäisen kuukauden aikana, ette maksa meille mitään.
+                Lynevo syntyi, kun näimme saman asian yhä uudelleen. Tilitoimistoilla on valtava määrä toistuvaa manuaalista työtä, joka voidaan automatisoida — mutta kukaan ei ole rakentanut sitä heille. Haluamme muuttaa sen.
               </p>
             </ClipReveal>
 
