@@ -126,13 +126,6 @@ function ServicesPage() {
                   Järjestelmä veloituksetta. Ensimmäinen kuukausi ilman sitoumuksia.
                 </h2>
               </FadeUp>
-              <FadeUp delay={0.15}>
-                <div className="mt-8 flex items-baseline gap-4">
-                  <span className="text-5xl md:text-6xl font-serif text-[color:var(--ink)]">
-                    Ilmainen käyttöönotto
-                  </span>
-                </div>
-              </FadeUp>
               <FadeUp delay={0.2}>
                 <p
                   className="mt-8 text-lg leading-relaxed max-w-xl"
