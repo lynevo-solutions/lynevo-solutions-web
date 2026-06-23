@@ -113,7 +113,10 @@ function AboutPage() {
           <div className="md:col-span-8">
             <FadeUp delay={0.1}>
               <p className="text-xl md:text-2xl leading-relaxed text-[color:var(--ink)]">
-                Tilitoimistoilla on enemmän toistuvaa manuaalista työtä kuin millään muulla pienyrityskentässä. Laskut, palkanlaskenta, ALV, raportointi — sama työ, joka kuukausi. Juuri siksi automaatio tuottaa täällä eniten ja nopeimmin. Kukaan muu ei rakenna juuri tähän markkinarakoon. Siksi me teemme.
+                Tilitoimistoalan ytimessä on toistuva, kuukausittainen sykli. Laskut, palkanlaskenta, arvonlisäverotus, raportointi ja asiakasviestintä sitovat kuukaudesta toiseen asiantuntijoiden arvokkaita tunteja rutiineihin.
+              </p>
+              <p className="mt-6 text-xl md:text-2xl leading-relaxed text-[color:var(--ink)]">
+                Juuri tästä syystä tekoäly tuottaa alalla merkittävää ja nopeasti mitattavaa arvoa. Kun rutiinit automatisoidaan oikein, tunnit eivät enää kulu liiketoiminnan ylläpitämiseen, vaan ne voidaan käyttää sen kasvattamiseen.
               </p>
             </FadeUp>
           </div>
