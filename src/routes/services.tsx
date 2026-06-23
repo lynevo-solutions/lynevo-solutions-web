@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { FadeUp } from "../components/FadeUp";
 
 export const Route = createFileRoute("/services")({
@@ -340,6 +341,88 @@ function ServicesPage() {
           </FadeUp>
         </div>
       </section>
+
+      {/* ─── FAQ ────────────────────────────────────────────── */}
+      <section className="py-28 md:py-40 bg-[color:var(--background)]">
+        <div className="container-novera max-w-3xl">
+          <FadeUp>
+            <p className="eyebrow mb-8">FAQ</p>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <h2 className="text-[28px] md:text-[40px] leading-tight mb-16">
+              Usein kysytyt kysymykset
+            </h2>
+          </FadeUp>
+          <FAQList />
+        </div>
+      </section>
     </>
+  );
+}
+
+const FAQ_ITEMS = [
+  {
+    q: "Kuulostaa liian hyvältä ollakseen totta.",
+    a: "Ymmärrän skeptisyyden. Siksi teemme sen veloituksetta ja mittaamme tulokset. Jakson jälkeen te päätätte jatkosta. Ei teille mitään maksettavaa ennen sitä.",
+  },
+  {
+    q: "Meillä on jo tekoäly ohjelmistossa.",
+    a: "Täydellinen. Me rakennamme sen päälle oman tekoälyosaston, joka yhdistää kaiken ja hoitaa prosessit automaattisesti. Ohjelmistojen ominaisuudet eivät häviä, vaan tulevat paremmin käyttöön.",
+  },
+  {
+    q: "Kuinka paljon meidän pitää käyttää tähän aikaa?",
+    a: "Teidän ajankäyttönne on rajattu muutamaan selkeään hetkeen: 30 minuutin tutustumispuhelu, lyhyt aloituskartoitus ja portaali-kävely. Sen jälkeen järjestelmä pyörii taustalla, ja te näette tulokset ROI-raportista. Emme teetä teillä IT-projektia.",
+  },
+  {
+    q: "Mitä jos emme halua jatkaa 30 päivän jälkeen?",
+    a: "Silloin ette jatka. Ensimmäinen kuukausi on veloituksetta riippumatta tuloksista, ja yhteistyö päättyy ilman maksuvelvoitetta. Järjestelmä on rakennettu teitä varten, mutta te päätätte aina itse, jatkatteko.",
+  },
+  {
+    q: "Mitä jos järjestelmä tekee virheitä kirjanpidossa?",
+    a: "Tekoälyjärjestelmä ei tee päätöksiä itsenäisesti eikä muuta kirjanpidon logiikkaa. Se on rakennettu hoitamaan rutiineja – lukemaan tietoa, täsmäyttämään sitä ja valmistelemaan sitä teidän asiantuntijoidenne hyväksyttäväksi. Järjestelmä on aina teidän hallinnassanne ja kaikki testataan ennen julkaisua.",
+  },
+  {
+    q: "Onko hinta jatkossa tuloksiin sidottu tai tuntiveloitteinen?",
+    a: "Ei ole. Hinta on kiinteä kuukausimaksu, joka perustuu tilitoimistonne kokoluokkaan, eikä se nouse automaatioiden lisääntyessä. Tavoitteemme on, että kiinteä kuukausimaksu on aina huomattavasti pienempi kuin järjestelmän vapauttama työaika mitattuna euroissa.",
+  },
+  {
+    q: "Voimmeko perua kuukausisopimuksen myöhemmin?",
+    a: "Kyllä. Me emme usko määräaikaisiin lukkoihin. Jos päätätte jatkaa ensimmäisen veloituksettoman kuukauden jälkeen, jatkossa voitte irtisanoa sopimuksen koska tahansa, mikäli ette koe saavanne siitä riittävästi lisäarvoa.",
+  },
+];
+
+function FAQList() {
+  const [open, setOpen] = useState<number | null>(null);
+  return (
+    <div className="divide-y" style={{ borderTop: "1px solid var(--divider)", borderBottom: "1px solid var(--divider)" }}>
+      {FAQ_ITEMS.map((item, i) => (
+        <div key={i}>
+          <button
+            onClick={() => setOpen(open === i ? null : i)}
+            className="w-full flex items-center justify-between gap-6 py-6 text-left"
+            style={{ color: "var(--ink)" }}
+          >
+            <span className="text-[17px] leading-snug">{item.q}</span>
+            <span
+              className="flex-shrink-0 text-lg transition-transform duration-300"
+              style={{
+                color: "var(--gold)",
+                transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
+              }}
+            >
+              +
+            </span>
+          </button>
+          {open === i && (
+            <p
+              className="pb-7 text-[15px] leading-relaxed max-w-2xl"
+              style={{ color: "var(--warm)" }}
+            >
+              {item.a}
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
   );
 }
