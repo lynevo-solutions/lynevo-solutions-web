@@ -566,7 +566,7 @@ function Home() {
               className="text-[28px] md:text-[48px] lg:text-[56px] leading-tight max-w-4xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Haluatteko nähdä, miten järjestelmä toimii teidän toimistossanne?
+              Haluatteko nähdä, miten tekoälyjärjestelmä toimii teidän tilitoimistossanne?
             </h2>
           </FadeUp>
           <FadeUp delay={0.12}>
@@ -574,7 +574,7 @@ function Home() {
               className="mt-8 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.42)" }}
             >
-              Varatkaa 30 minuutin tutustumispuhelu. Selvitetään yhdessä, mitkä prosessit kannattaa automatisoida ensin. Ei sitoumuksia.
+              Varatkaa 30 minuutin tutustumispuhelu. Selvitetään yhdessä, mitkä prosessit kannattaa automatisoida ensin ja mitä 30 tunnin säästö tarkoittaisi teidän tiimillenne. Ei sitoumuksia.
             </p>
           </FadeUp>
           <FadeUp delay={0.24}>
@@ -601,7 +601,7 @@ function Home() {
                 className="mt-6 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.25)" }}
               >
-                Ei sitoumuksia. Ei myyntipainetta.
+                Veloituksetta. Ei sitoumuksia. Ei myyntipainetta.
               </p>
             </div>
           </FadeUp>
