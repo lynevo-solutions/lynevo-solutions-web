@@ -248,7 +248,7 @@ function Home() {
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[50px] leading-[1.08] text-white">
               <LineReveal delay={T_L1}>
-                Autamme tilitoimistoja siirtymään manuaalisesta työstä tehokkaampaan arkeen
+                Autamme tilitoimistoja siirtymään manuaalisesta työstä tehokkaampaan arkeen.
               </LineReveal>
             </h1>
 
@@ -263,7 +263,7 @@ function Home() {
             {/* Subheading */}
             <ClipReveal delay={T_SUB} className="mt-10">
               <p className="text-[17px] leading-relaxed" style={{ color: "rgba(255,255,255,0.52)" }}>
-                Lynevo syntyi, kun näimme saman asian yhä uudelleen. Tilitoimistoilla on valtava määrä toistuvaa manuaalista työtä, joka voidaan automatisoida — mutta kukaan ei ole rakentanut sitä heille. Haluamme muuttaa sen.
+                Lynevo on tekoälyosasto suomalaisille tilitoimistoille. Me rakennamme teidän tilitoimistolle oman tekoälyjärjestelmän ja pyöritämme sitä teidän puolestanne. Kytketty teidän ohjelmistoihinne. Pyörii taustalla. Kasvaa joka kuukausi.
               </p>
             </ClipReveal>
 
@@ -284,14 +284,14 @@ function Home() {
                   e.currentTarget.style.color = "rgba(255,255,255,0.85)";
                 }}
               >
-                Varaa maksuton tutustumispuhelu
+                Varaa 30 minuutin tutustumispuhelu
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <p
                 className="mt-5 text-xs tracking-wider"
                 style={{ color: "rgba(255,255,255,0.3)" }}
               >
-                30 minuuttia. Ei sitoumuksia. Selvitetään yhdessä, sopiiko järjestelmä Teille.
+                30 minuuttia. Veloituksetta. Ei sitoumuksia. Selvitetään yhdessä, sopiiko tekoälyjärjestelmä teidän tilitoimistolle.
               </p>
             </ClipReveal>
           </div>
