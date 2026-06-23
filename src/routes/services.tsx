@@ -107,7 +107,7 @@ function ServicesPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Rakennamme, käyttöönotamme ja ylläpidämme järjestelmän, joka automatisoi teidän tilitoimistonne manuaalisia prosesseja. Ensimmäinen kuukausi veloituksetta. Jakson jälkeen asiakas päättää jatkosta.
+              Rakennamme, otamme käyttöön ja ylläpidämme tekoälyjärjestelmän, joka automatisoi teidän tilitoimiston manuaalisia prosesseja. Ensimmäinen kuukausi on aina veloituksetta. Jakson jälkeen te päätätte jatkosta.
             </p>
           </FadeUp>
         </div>
