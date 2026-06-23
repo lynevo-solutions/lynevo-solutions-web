@@ -335,7 +335,7 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── FAQ ────────────────────────────────────────────── */}
+      {/* ─── FAQ ──────────────────────────────────────────────── */}
       <section className="py-28 md:py-40 bg-[color:var(--background)]">
         <div className="container-novera max-w-3xl">
           <FadeUp>
@@ -347,6 +347,81 @@ function ServicesPage() {
             </h2>
           </FadeUp>
           <FAQList />
+        </div>
+      </section>
+
+      {/* ─── SERVICES CTA ─────────────────────────────────────── */}
+      <section
+        className="relative overflow-hidden"
+        style={{ background: "#0F0E0B" }}
+      >
+        {/* Gold bloom */}
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(184,149,106,0.12) 0%, transparent 70%)",
+            animation: "ring-pulse 7s ease-in-out infinite",
+          }}
+        />
+        {/* Top edge */}
+        <div
+          aria-hidden
+          className="absolute top-0 inset-x-0 h-px pointer-events-none"
+          style={{ background: "linear-gradient(to right, transparent, rgba(184,149,106,0.3), transparent)" }}
+        />
+
+        <div className="container-novera py-32 md:py-44 relative" style={{ zIndex: 1 }}>
+          <FadeUp>
+            <h2
+              className="text-[26px] md:text-[42px] leading-tight max-w-3xl"
+              style={{ color: "rgba(255,255,255,0.92)" }}
+            >
+              Haluatteko nähdä, mitä 30 tunnin säästö tarkoittaisi teidän tilitoimistossanne?
+            </h2>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <p
+              className="mt-8 text-lg max-w-xl leading-relaxed"
+              style={{ color: "rgba(255,255,255,0.50)" }}
+            >
+              Varaa tutustumispuhelu. Käymme läpi teidän tilanteenne, arvioimme säästöpotentiaalin ja näytämme, miltä ensimmäisen kuukauden ROI-raportti voisi näyttää.
+            </p>
+          </FadeUp>
+          <FadeUp delay={0.2}>
+            <div className="mt-12">
+              <a
+                href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-8 py-4 text-sm border transition-colors duration-300"
+                style={{
+                  borderColor: "rgba(184,149,106,0.5)",
+                  color: "var(--gold)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "var(--gold)";
+                  e.currentTarget.style.background = "rgba(184,149,106,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(184,149,106,0.5)";
+                  e.currentTarget.style.background = "transparent";
+                }}
+              >
+                Varaa tutustumispuhelu
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.25}>
+            <p
+              className="mt-6 text-sm tracking-wider"
+              style={{ color: "rgba(255,255,255,0.30)" }}
+            >
+              Veloituksetta. Ei sitoumuksia.
+            </p>
+          </FadeUp>
         </div>
       </section>
     </>
