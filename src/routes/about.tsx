@@ -70,7 +70,7 @@ function AboutPage() {
               className="text-[30px] md:text-[46px] lg:text-[56px] leading-[1.05] max-w-5xl"
               style={{ color: "rgba(255,255,255,0.92)" }}
             >
-              Haluamme palauttaa tilitoimistojen omistajille heidän aikansa.
+              Vapautamme tiiminne toistuvista rutiineista takaisin asiantuntijatyöhön
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
@@ -78,7 +78,7 @@ function AboutPage() {
               className="mt-10 text-lg max-w-2xl leading-relaxed"
               style={{ color: "rgba(255,255,255,0.50)" }}
             >
-              Lynevo syntyi, kun näimme saman asian yhä uudelleen. Tilitoimistoilla on valtava määrä toistuvaa manuaalista työtä, joka voidaan automatisoida — mutta kukaan ei ole rakentanut sitä heille. Haluamme muuttaa sen.
+              Lynevo syntyi yhdestä selkeästä huomiosta. Tilitoimistoilla on valtava määrä toistuvaa manuaalista työtä, joka voidaan nykyteknologialla automatisoida. Silti tarjolla olevat ratkaisut ovat usein vain uusia irrallisia työkaluja tai raskaita IT-projekteja, jotka vievät asiakkaan aikaa. Me halusimme muuttaa tämän.
             </p>
           </FadeUp>
         </div>
