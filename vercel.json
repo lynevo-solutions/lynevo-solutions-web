@@ -1,8 +1,6 @@
 {
-  "buildCommand": "bun run build",
-  "outputDirectory": "dist/client",
   "framework": null,
-  "rewrites": [
-    { "source": "/((?!assets|favicon\\.png).*)", "destination": "/$1" }
-  ]
+  "buildCommand": "echo no build step",
+  "outputDirectory": ".",
+  "cleanUrls": true
 }
