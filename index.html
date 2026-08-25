@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lynevo · Oma tekoälyosastosi</title>
-<meta name="description" content="Lynevo rakentaa ja pyörittää tekoälyjärjestelmäsi. Oma tekoälyosasto suomalaiselle yrityksellesi. Ensimmäinen kuukausi veloituksetta, ilman sitoutumista.">
+<title>Lynevo · Yrityksenne oma tekoälyosasto</title>
+<meta name="description" content="Lynevo rakentaa ja pyörittää tekoälyjärjestelmänne. Oma tekoälyosasto suomalaiselle yrityksellenne. Ensimmäinen kuukausi veloituksetta, ilman sitoutumista.">
 <meta name="theme-color" content="#1C1A16">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231C1A16'/%3E%3Ctext x='16' y='22.5' font-family='Georgia,serif' font-size='21' font-weight='600' fill='%23C0C0C0' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lynevo · Oma tekoälyosastosi">
-<meta property="og:description" content="Oma tekoälyosasto suomalaiselle yrityksellesi. Tekoäly hoitaa työn, jota et saa täytettyä, yhdistyy työkaluihisi ja toimii 24/7.">
+<meta property="og:title" content="Lynevo · Yrityksenne oma tekoälyosasto">
+<meta property="og:description" content="Oma tekoälyosasto suomalaiselle yrityksellenne. Tekoäly hoitaa työn, jota ette saa täytettyä, yhdistyy työkaluihinne ja toimii 24/7.">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:url" content="https://lynevo.fi/">
 <meta property="og:image" content="https://lynevo.fi/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lynevo · Oma tekoälyosastosi">
-<meta name="twitter:description" content="Oma tekoälyosasto suomalaiselle yrityksellesi. Tekoäly hoitaa työn, jota et saa täytettyä.">
+<meta name="twitter:title" content="Lynevo · Yrityksenne oma tekoälyosasto">
+<meta name="twitter:description" content="Oma tekoälyosasto suomalaiselle yrityksellenne. Tekoäly hoitaa työn, jota ette saa täytettyä.">
 <meta name="twitter:image" content="https://lynevo.fi/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -502,6 +502,8 @@
   .trial-banner p { font-size: 1rem; color: var(--text); line-height: 1.5; }
   .trial-banner strong { font-weight: 500; }
   .tier-features { list-style: none; margin: 0; padding: 0; }
+  /* Tiers without a trial line: keep the feature list level with the Entry card */
+  .tier-price + .tier-features { margin-top: 44px; }
   .tier-features li {
     position: relative; margin-bottom: 12px; padding-left: 24px;
     color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;
@@ -1285,7 +1287,7 @@
       <a href="#hinnoittelu" class="nav-link">Hinnoittelu</a>
       <a href="#tietoa" class="nav-link">Tietoa</a>
       <a href="#aloita" class="nav-link">Yhteys</a>
-      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="nav-cta">Varaa kartoitus</a>
+      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="nav-cta">Varatkaa kartoitus</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false">
       <span></span><span></span>
@@ -1299,7 +1301,7 @@
   <a href="#hinnoittelu">Hinnoittelu</a>
   <a href="#tietoa">Tietoa</a>
   <a href="#aloita">Yhteys</a>
-  <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn">Varaa kartoitus <span class="arrow">→</span></a>
+  <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn">Varatkaa kartoitus <span class="arrow">→</span></a>
 </nav>
 
 <!-- ===== HERO ===== -->
@@ -1314,10 +1316,10 @@
   <div class="wrap">
     <div class="hero-content">
       <span class="label hero-label reveal"><span class="live-dot" aria-hidden="true"></span>Tekoälyosasto suomalaisille yrityksille</span>
-      <h1 class="reveal-mask d1"><span>Työ, jota et saa täytettyä? <em>Tekoäly hoitaa sen.</em></span></h1>
-      <p class="hero-sub reveal d2">Oma tekoälyosasto yhdistyy nykyisiin työkaluihisi ja hoitaa työn 24/7, murto-osalla kokoaikaisen tekijän hinnasta.</p>
+      <h1 class="reveal-mask d1"><span>Työ, jota ette saa täytettyä? <em>Tekoäly hoitaa sen.</em></span></h1>
+      <p class="hero-sub reveal d2">Oma tekoälyosasto yhdistyy nykyisiin työkaluihinne ja hoitaa työn 24/7, murto-osalla kokoaikaisen tekijän hinnasta.</p>
       <div class="hero-actions reveal d3">
-        <a href="#aloita" class="btn btn-primary">Varaa ilmainen kartoitus <span class="arrow">→</span></a>
+        <a href="#aloita" class="btn btn-primary">Varatkaa ilmainen kartoitus <span class="arrow">→</span></a>
         <a href="#miten" class="btn btn-ghost">Miten se toimii</a>
       </div>
       <div class="hero-trust reveal d4">
@@ -1349,17 +1351,17 @@
       <div class="step step--first reveal">
         <div class="step-num" data-count="1">01</div>
         <h3>Kartoituspuhelu</h3>
-        <p>30 minuutissa ymmärrämme liiketoimintasi, kipupisteet ja mihin tekoälystä on eniten hyötyä. Ei painostusta, ei myyntipuhetta. Rehellinen keskustelu siitä, mikä on mahdollista.</p>
+        <p>30 minuutissa ymmärrämme liiketoimintanne, kipupisteet ja mihin tekoälystä on eniten hyötyä. Ei painostusta, ei myyntipuhetta. Rehellinen keskustelu siitä, mikä on mahdollista.</p>
       </div>
       <div class="step reveal d1">
         <div class="step-num" data-count="2">02</div>
         <h3>Selvitys & varmistus</h3>
-        <p>1–2 viikossa varmistamme integraatiot, datalähteet ja pääsyt. Saat selkeän selvityksen siitä, mitä tekoälyosastosi tarkalleen tekee ennen kuin mitään rakennetaan.</p>
+        <p>1–2 viikossa varmistamme integraatiot, datalähteet ja pääsyt. Saatte selkeän selvityksen siitä, mitä tekoälyosastonne tarkalleen tekee ennen kuin mitään rakennetaan.</p>
       </div>
       <div class="step reveal d2">
         <div class="step-num" data-count="3">03</div>
         <h3>Rakennus & käyttöönotto</h3>
-        <p>Rakennamme räätälöidyn järjestelmän tarvitsemillasi moduuleilla ja yhdistämme sen nykyisiin työkaluihisi. Käyttövalmis 2–4 viikossa.</p>
+        <p>Rakennamme räätälöidyn järjestelmän tarvitsemillanne automaatioilla ja yhdistämme sen nykyisiin työkaluihinne. Käyttövalmis 2–4 viikossa.</p>
       </div>
       <div class="step reveal d3">
         <div class="step-num" data-count="4">04</div>
@@ -1377,7 +1379,7 @@
       <span class="section-index reveal" data-count="2">02</span>
       <span class="label reveal">Tulokset</span>
       <h2 class="reveal-mask d1"><span>Tuloksia, jotka voi mitata.</span></h2>
-      <p class="reveal d2">Kyse ei ole teknologiasta. Kyse on ajasta, jonka saat takaisin.</p>
+      <p class="reveal d2">Kyse ei ole teknologiasta. Kyse on ajasta, jonka saatte takaisin.</p>
     </div>
     <!-- Live briefing — the morning report a Lynevo customer wakes up to, typing itself -->
     <div class="briefing reveal" id="briefing">
@@ -1385,7 +1387,7 @@
         <span class="briefing-dot" aria-hidden="true"></span>
         <span class="briefing-title">Tilannekatsaus · Tiistai 07.00</span>
       </div>
-      <p class="sr-only">Esimerkki päivittäisestä tilannekatsauksesta: 3 uutta liidiä yön aikana, 2 vastattu automaattisesti. Laskut täsmäytetty 14/14, poikkeamia 0. Viikon kassavirtaennuste päivitetty. Tarjous hyväksytty, sopimus luotu ja arkistoitu. Säästetty tänään: 3 tuntia 40 minuuttia.</p>
+      <p class="sr-only">Esimerkki päivittäisestä tilannekatsauksesta: 3 uutta liidiä yön aikana, 2 vastattu automaattisesti. Tilaukset käsitelty 14/14, poikkeamia 0. Viikon myyntiennuste päivitetty. Tarjous hyväksytty, sopimus luotu ja arkistoitu. Säästetty tänään: 3 tuntia 40 minuuttia.</p>
       <div class="briefing-body" aria-hidden="true"></div>
       <div class="briefing-foot" aria-hidden="true">
         <span class="b-label">Säästetty tänään</span>
@@ -1408,8 +1410,8 @@
             </g>
           </svg>
         </div>
-        <h3>Korvaa rooli, jota et saa täytettyä</h3>
-        <p>Lopeta sellaisen paikan täyttäminen, johon kukaan ei hae tai johon ei ole varaa. Tekoälyosasto hoitaa työn vuorokauden ympäri: liidit, talousanalyysin, markkinoinnin ja operaatiot, murto-osalla kokoaikaisen tekijän kustannuksesta.</p>
+        <h3>Korvaa rooli, jota ette saa täytettyä</h3>
+        <p>Lopettakaa sellaisen paikan täyttäminen, johon kukaan ei hae tai johon ei ole varaa. Tekoälyosasto hoitaa työn vuorokauden ympäri: liidit, talousanalyysin, markkinoinnin ja operaatiot, murto-osalla kokoaikaisen tekijän kustannuksesta.</p>
       </div>
       <div class="benefit reveal d1">
         <!-- Diagram: a clock that is actually running -->
@@ -1450,8 +1452,8 @@
             <circle class="vz-fill" cx="110" cy="60" r="3.5"/>
           </svg>
         </div>
-        <h3>Yhdistyy siihen, mitä jo käytät</h3>
-        <p>Tekoälyosasto istuu nykyisten ohjelmistojesi päälle: CRM, kirjanpito, sähköposti ja taulukot. Ei raskasta käyttöönottoa, vaan työkalut, jotka sinulla jo on, alkavat toimia yhdessä ja tehokkaammin.</p>
+        <h3>Yhdistyy siihen, mitä jo käytätte</h3>
+        <p>Tekoälyosasto istuu nykyisten ohjelmistojenne päälle: CRM, projektinhallinta, sähköposti ja taulukot. Ei raskasta käyttöönottoa, vaan työkalut, jotka teillä jo on, alkavat toimia yhdessä ja tehokkaammin.</p>
       </div>
       <div class="benefit reveal d1">
         <!-- Diagram: results curve drawing itself upward -->
@@ -1466,7 +1468,7 @@
           </svg>
         </div>
         <h3>Tuloksia viikoissa, ei kuukausissa</h3>
-        <p>Useimmat tekoälyosastot ovat käytössä ja tuottavat arvoa neljässä viikossa. Näet päivittäiset tilannekatsaukset, automatisoidut työnkulut ja mitattavan ajansäästön heti käyttöönotosta.</p>
+        <p>Useimmat tekoälyosastot ovat käytössä ja tuottavat arvoa neljässä viikossa. Näette päivittäiset tilannekatsaukset, automatisoidut työnkulut ja mitattavan ajansäästön heti käyttöönotosta.</p>
       </div>
     </div>
   </div>
@@ -1478,32 +1480,31 @@
     <div class="section-head section-head--center">
       <span class="section-index reveal" data-count="3">03</span>
       <span class="label reveal">Hinnoittelu</span>
-      <h2 class="reveal-mask d1"><span>Valitse automaatiosi taso.</span></h2>
-      <p class="reveal d2">Jokainen taso on valmis tekoälyjärjestelmä, joka kasvaa liiketoimintasi mukana. Kartoituksessa selvitämme yhdessä, mikä taso vastaa juuri sinun tarpeitasi.</p>
+      <h2 class="reveal-mask d1"><span>Tekoälyosasto yrityksenne taustalle.</span></h2>
+      <p class="reveal d2">Rakennamme yrityksellenne räätälöidyn tekoälyjärjestelmän, joka hoitaa toistuvat työvaiheet taustalla, yhdistää käytössä olevat työkalut ja kehittyy liiketoimintanne mukana.</p>
     </div>
     <div class="trial-banner glow-border reveal">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-      <p><strong>Kokeile mitä tahansa tasoa 30 päivää veloituksetta.</strong> Rakennamme tekoälyosastosi ja annamme sen tuottaa kuukauden ilman kuluja. Et sitoudu missään vaiheessa ostamaan: päätät jatkosta itse ja maksat vasta kun tulokset on todistettu.</p>
+      <p><strong>Entry-tason voitte kokeilla 30 päivää veloituksetta.</strong> Rakennamme yrityksellenne tekoälyjärjestelmän ja annamme sen pyöriä kuukauden. Sen jälkeen päätätte vapaasti, haluatteko jatkaa.</p>
     </div>
     <div class="tiers-grid">
       <div class="tier reveal">
         <div class="tier-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6 3 10.5 12 15l9-4.5L12 6z"/></svg>
         </div>
-        <h3 class="tier-name">Perus</h3>
-        <span class="tier-modules">3–4 moduulia</span>
+        <h3 class="tier-name">Entry</h3>
+        <span class="tier-modules">3–4 automaatiota</span>
         <div class="module-grid" data-lit="4" aria-hidden="true"></div>
-        <p class="tier-essence">Näkyvyys: tekoäly löytää mahdollisuudet, tiimisi toteuttaa.</p>
+        <p class="tier-essence">Kohdennettu kokonaisuus liiketoiminnan kriittisimpiin rutiineihin.</p>
         <div class="tier-price">2 000 € <span>/ kk</span></div>
         <div class="tier-trial">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
           Ensimmäiset 30 päivää veloituksetta
         </div>
         <ul class="tier-features">
-          <li>Päivittäiset tilannekatsaukset</li>
-          <li>Automaattinen tiedonkeruu</li>
-          <li>Järjestelmän ylläpito</li>
-          <li>Neljännesvuosittainen optimointi</li>
+          <li>3 tai 4 keskeistä rutiinia automatisoituna</li>
+          <li>Toimii nykyisten työkalujenne rinnalla</li>
+          <li>Jatkuva ylläpito ja kehitys mukana</li>
         </ul>
       </div>
       <div class="tier tier--featured reveal d1">
@@ -1511,48 +1512,36 @@
         <div class="tier-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5 12 12l9-4.5L12 3z"/><path d="m3 13.5 9 4.5 9-4.5"/></svg>
         </div>
-        <h3 class="tier-name">Pro</h3>
-        <span class="tier-modules">7–8 moduulia</span>
+        <h3 class="tier-name">Growth</h3>
+        <span class="tier-modules">7–8 automaatiota</span>
         <div class="module-grid" data-lit="8" aria-hidden="true"></div>
-        <p class="tier-essence">Toteutus: tekoäly tekee työn, sinä tulet palavereihin.</p>
+        <p class="tier-essence">Saumaton tiedonkulku tiimien ja toimintojen välille.</p>
         <div class="tier-price">3 500 € <span>/ kk</span></div>
-        <div class="tier-trial">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-          Ensimmäiset 30 päivää veloituksetta
-        </div>
         <ul class="tier-features">
-          <li>Kaikki Perus-tasosta</li>
-          <li>Tekoälyn tuottamat toimenpiteet</li>
-          <li>Yhteydenottojen automaatio</li>
-          <li>Strategiapuhelut joka toinen viikko</li>
-          <li>Priorisoitu tuki</li>
+          <li>Kaikki Entry-tason hyödyt</li>
+          <li>7 tai 8 toisiinsa kytkettyä automaatiota</li>
+          <li>Tieto liikkuu ohjelmistojen välillä automaattisesti</li>
         </ul>
       </div>
       <div class="tier reveal d2">
         <div class="tier-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6.5 12 11l9-4.5L12 2z"/><path d="m3 12 9 4.5L21 12"/><path d="m3 17.5 9 4.5 9-4.5"/></svg>
         </div>
-        <h3 class="tier-name">Täysi</h3>
-        <span class="tier-modules">15+ moduulia</span>
+        <h3 class="tier-name">Full</h3>
+        <span class="tier-modules">15+ automaatiota</span>
         <div class="module-grid" data-lit="16" aria-hidden="true"></div>
-        <p class="tier-essence">Muutos: jokainen työ yrityksessäsi automatisoituna.</p>
+        <p class="tier-essence">Koko organisaation toistuvat prosessit kattava järjestelmä.</p>
         <div class="tier-price">6 500 € <span>/ kk</span></div>
-        <div class="tier-trial">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-          Ensimmäiset 30 päivää veloituksetta
-        </div>
         <ul class="tier-features">
-          <li>Kaikki Pro-tasosta</li>
-          <li>Täysi tehtäväkartoitus</li>
-          <li>Käynnit paikan päällä</li>
-          <li>Viikoittaiset strategiapuhelut</li>
-          <li>Uusi moduuli joka kuukausi, kunnes koko toiminta pyörii itsestään</li>
+          <li>Kaikki Growth-tason hyödyt</li>
+          <li>15+ automaatiota koko toiminnan tueksi</li>
+          <li>Asiakkuudet, työnkulut ja raportointi toimivat taustalla</li>
         </ul>
       </div>
     </div>
     <div class="tiers-cta reveal">
-      <p class="tiers-note">Et ole varma tasosta? Varaa kartoitus, niin suosittelemme sopivan.</p>
-      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary">Varaa kartoitus <span class="arrow">→</span></a>
+      <p class="tiers-note">Epävarma sopivasta tasosta? Kartoituksessa suosittelemme teille sopivimman.</p>
+      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary">Varatkaa kartoitus <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -1565,9 +1554,9 @@
       <span class="label reveal">Tietoa meistä</span>
       <h2 class="reveal-mask d1"><span>Emme myy teoriaa. <em>Rakennamme moottoreita.</em></span></h2>
       <p class="reveal d2">Lynevo rakentaa ja pyörittää tekoälyjärjestelmiä suomalaisille yrityksille. Jokainen tekoälyosasto on toimiva järjestelmä, joka yhdistyy oikeisiin työkaluihin ja tuottaa mitattavia tuloksia.</p>
-      <p class="reveal d2">Uskomme, että liiketoiminnan voittaa se, jolla on saumattomimmat prosessit. Lynevo on perustettu ajatukselle, että tekoäly ei ole vain työkalu tekstin tuottamiseen, vaan moottori, joka pyörittää yrityksen operatiivista ydintä. Olemme hioneet asiantuntemuksemme B2B-myynnin, tilausketjujen ja asiakashallinnan optimoinnissa, ja tiedämme tarkalleen, missä manuaalinen työ syö yrityksesi tulosta.</p>
-      <p class="reveal d3">Emme toimita konsulttikalvoja, vaan toimivan digitaalisen infrastruktuurin. Sitoudumme tuloksiin ja poistamme prosessiesi pullonkaulat yksi kerrallaan. Kun me teemme työmme, tiimisi voi keskittyä siihen, mikä on oikeasti tärkeää: kasvuun ja asiakkaiden palvelemiseen.</p>
-      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary reveal d3">Varaa kartoitus <span class="arrow">→</span></a>
+      <p class="reveal d2">Uskomme, että liiketoiminnan voittaa se, jolla on saumattomimmat prosessit. Lynevo on perustettu ajatukselle, että tekoäly ei ole vain työkalu tekstin tuottamiseen, vaan moottori, joka pyörittää yrityksen operatiivista ydintä. Olemme hioneet asiantuntemuksemme B2B-myynnin, tilausketjujen ja asiakashallinnan optimoinnissa, ja tiedämme tarkalleen, missä manuaalinen työ syö yrityksenne tulosta.</p>
+      <p class="reveal d3">Emme toimita konsulttikalvoja, vaan toimivan digitaalisen infrastruktuurin. Sitoudumme tuloksiin ja poistamme prosessienne pullonkaulat yksi kerrallaan. Kun me teemme työmme, tiiminne voi keskittyä siihen, mikä on oikeasti tärkeää: kasvuun ja asiakkaiden palvelemiseen.</p>
+      <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary reveal d3">Varatkaa kartoitus <span class="arrow">→</span></a>
     </div>
     <aside class="about-mission glow-border reveal d2">
       <!-- Diagram: the engine — orbital system rings, pulsing core, flowing feed lines -->
@@ -1609,7 +1598,7 @@
       <div class="contact-left">
         <span class="label reveal">Ota yhteyttä</span>
         <h2 class="reveal d1">Valmis ottamaan tekoälyn töihin?</h2>
-        <p class="reveal d1">Varaa maksuton 30 minuutin kartoituspuhelu. Käymme läpi suurimman kipupisteesi ja näytämme tarkalleen, miten tekoälyosasto ratkaisisi sen. Ei painostusta, ei sitoutumista.</p>
+        <p class="reveal d1">Varatkaa maksuton 30 minuutin kartoituspuhelu. Käymme läpi suurimman kipupisteenne ja näytämme tarkalleen, miten tekoälyosasto ratkaisisi sen. Ei painostusta, ei sitoutumista.</p>
         <ul class="contact-details">
           <li class="reveal d2">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
@@ -1624,9 +1613,9 @@
       </div>
       <div class="contact-right">
         <div class="ping reveal d1" aria-hidden="true"><span></span></div>
-        <h3 class="reveal d2">Varaa kartoituspuhelu</h3>
-        <p class="reveal d3">Valitse sinulle sopiva aika, me hoidamme loput.</p>
-        <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary reveal d3">Varaa ilmainen kartoitus <span class="arrow">→</span></a>
+        <h3 class="reveal d2">Varatkaa kartoituspuhelu</h3>
+        <p class="reveal d3">Valitkaa teille sopiva aika, me hoidamme loput.</p>
+        <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary reveal d3">Varatkaa ilmainen kartoitus <span class="arrow">→</span></a>
         <ul class="contact-checklist">
           <li class="reveal d4">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
@@ -1663,7 +1652,7 @@
           <a href="#tulokset">Tulokset</a>
           <a href="#hinnoittelu">Hinnoittelu</a>
           <a href="#tietoa">Tietoa meistä</a>
-          <a href="#aloita">Aloita ilmaiseksi</a>
+          <a href="#aloita">Aloittakaa ilmaiseksi</a>
         </div>
         <div class="footer-col reveal d2">
           <h4>Yhteys</h4>
@@ -1784,8 +1773,8 @@
     const BRIEFINGS = [
       { title: 'Tilannekatsaus · Tiistai 07.00', mins: 220, lines: [
         '3 uutta liidiä yön aikana — 2 vastattu automaattisesti',
-        'Laskut täsmäytetty: 14/14 · poikkeamia 0',
-        'Viikon kassavirtaennuste päivitetty',
+        'Tilaukset käsitelty: 14/14 · poikkeamia 0',
+        'Viikon myyntiennuste päivitetty',
         'Tarjous #1042 hyväksytty — sopimus luotu ja arkistoitu',
       ]},
       { title: 'Tilannekatsaus · Keskiviikko 07.00', mins: 255, lines: [
