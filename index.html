@@ -458,12 +458,6 @@
   .theme-light .tier:hover { background: #FFFFFF; box-shadow: 0 18px 44px -26px rgba(0, 0, 0, 0.30); }
   .tier--featured { border-color: var(--accent); transform: scale(1.035); z-index: 2; }
   .tier--featured:hover { transform: scale(1.035) translateY(-5px); }
-  .tier-badge {
-    position: absolute; top: -11px; right: 24px;
-    font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.18em; text-transform: uppercase;
-    color: #1C1A16; background: var(--accent);
-    padding: 5px 12px; border-radius: 100px; font-weight: 500;
-  }
   .tier-icon {
     width: 46px; height: 46px;
     border-radius: 10px;
@@ -479,13 +473,8 @@
     font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--accent); display: block; margin-bottom: 18px;
   }
-  /* Two-line reserve keeps price and features level across all three cards */
+  /* Two-line reserve keeps the features level across all three cards */
   .tier-essence { color: var(--text-muted); font-size: 1rem; margin-bottom: 18px; font-style: italic; min-height: 3.4em; }
-  .tier-price {
-    font-family: var(--serif); font-size: 2rem; line-height: 1; font-weight: 500;
-    color: var(--text); margin-bottom: 8px;
-  }
-  .tier-price span { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.04em; color: var(--text-muted); margin-left: 5px; }
   .tier-trial {
     display: flex; align-items: center; gap: 8px; margin-bottom: 24px;
     font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--accent);
@@ -503,8 +492,6 @@
   .trial-banner p { font-size: 1rem; color: var(--text); line-height: 1.5; }
   .trial-banner strong { font-weight: 500; }
   .tier-features { list-style: none; margin: 0; padding: 0; }
-  /* Price gets a little more air than a paragraph, but stays in the card's rhythm */
-  .tier-price + .tier-features { margin-top: 16px; }
   .tier-features li {
     position: relative; margin-bottom: 12px; padding-left: 24px;
     color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;
@@ -532,6 +519,7 @@
   .tiers-included-intro { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 26px; }
   .tiers-included-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
   .tiers-included-list strong { color: var(--text); font-weight: 500; }
+  .tiers-pricing-list { grid-template-columns: repeat(3, 1fr); }
 
   /* ---------- About ---------- */
   .about-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 64px; align-items: center; }
@@ -1470,7 +1458,7 @@
           </svg>
         </div>
         <h3>Yhdistyy siihen, mitä jo käytätte</h3>
-        <p>Tekoälyosasto istuu nykyisten ohjelmistojenne päälle: CRM, projektinhallinta, sähköposti ja taulukot. Ei raskasta käyttöönottoa, vaan työkalut, jotka teillä jo on, alkavat toimia yhdessä ja tehokkaammin.</p>
+        <p>Tekoälyosasto istuu nykyisten ohjelmistojenne päälle: toiminnanohjaus (ERP), CRM, sähköposti ja taulukot. Ei raskasta käyttöönottoa, vaan työkalut, jotka teillä jo on, alkavat toimia yhdessä ja tehokkaammin.</p>
       </div>
       <div class="benefit reveal d1">
         <!-- Diagram: results curve drawing itself upward -->
@@ -1485,7 +1473,7 @@
           </svg>
         </div>
         <h3>Tuloksia viikoissa, ei kuukausissa</h3>
-        <p>Useimmat tekoälyosastot ovat käytössä ja tuottavat arvoa neljässä viikossa. Näette päivittäiset tilannekatsaukset, automatisoidut työnkulut ja mitattavan ajansäästön heti käyttöönotosta.</p>
+        <p>Tavoitteena on, että tekoälyosasto on käytössä ja tuottaa arvoa neljässä viikossa. Näette päivittäiset tilannekatsaukset, automatisoidut työnkulut ja mitattavan ajansäästön heti käyttöönotosta.</p>
       </div>
     </div>
   </div>
@@ -1513,7 +1501,6 @@
         <span class="tier-modules">3–4 automaatiota</span>
         <div class="module-grid" data-lit="4" aria-hidden="true"></div>
         <p class="tier-essence">Kohdennettu kokonaisuus kriittisimpiin rutiineihin.</p>
-        <div class="tier-price">2&nbsp;000&nbsp;€ <span>/ kk</span></div>
         <ul class="tier-features">
           <li>Yksi ydinprosessi alusta loppuun automatisoituna</li>
           <li>Vähentää manuaalityötä ja virheitä heti käyttöönotosta</li>
@@ -1521,7 +1508,6 @@
         </ul>
       </div>
       <div class="tier tier--featured reveal d1">
-        <span class="tier-badge">Suosituin</span>
         <div class="tier-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5 12 12l9-4.5L12 3z"/><path d="m3 13.5 9 4.5 9-4.5"/></svg>
         </div>
@@ -1529,7 +1515,6 @@
         <span class="tier-modules">7–8 automaatiota</span>
         <div class="module-grid" data-lit="8" aria-hidden="true"></div>
         <p class="tier-essence">Saumaton tiedonkulku tiimien ja toimintojen välille.</p>
-        <div class="tier-price">3&nbsp;500&nbsp;€ <span>/ kk</span></div>
         <ul class="tier-features">
           <li>Useampi keskeinen prosessi samaan järjestelmään</li>
           <li>Data kulkee automaattisesti tiimien ja järjestelmien välillä</li>
@@ -1544,13 +1529,21 @@
         <span class="tier-modules">15+ automaatiota</span>
         <div class="module-grid" data-lit="16" aria-hidden="true"></div>
         <p class="tier-essence">Koko organisaation prosessit kattava järjestelmä.</p>
-        <div class="tier-price">6&nbsp;500&nbsp;€ <span>/ kk</span></div>
         <ul class="tier-features">
           <li>Jokainen toistuva prosessi automatisoituna taustalle</li>
-          <li>Ostolaskut, palkka-aineistot ja raportointi yhdessä</li>
+          <li>Myynti, tilaukset, talous ja raportointi samassa järjestelmässä</li>
           <li>Yrityksenne oma tekoälyosasto täydessä laajuudessaan</li>
         </ul>
       </div>
+    </div>
+    <div class="tiers-included glow-border reveal">
+      <h3>Miten hinta muodostuu</h3>
+      <p class="tiers-included-intro">Jokainen tekoälyosasto rakennetaan yrityksenne prosessien ympärille, joten myös hinta räätälöidään. Saatte kiinteän kuukausihinnan kirjallisena kartoituksen jälkeen.</p>
+      <ul class="tier-features tiers-included-list tiers-pricing-list">
+        <li><strong>Automaatioiden määrä ja monimutkaisuus:</strong> Kuinka monta työvaihetta tekoälyosasto hoitaa ja kuinka paljon harkintaa ne vaativat.</li>
+        <li><strong>Kytkettävät järjestelmät:</strong> Mihin ohjelmistoihin ja tietolähteisiin järjestelmä yhdistetään.</li>
+        <li><strong>Käsiteltävät volyymit:</strong> Esimerkiksi tilausten, viestien tai rivien määrä kuukaudessa.</li>
+      </ul>
     </div>
     <div class="tiers-included glow-border reveal">
       <h3>Kaikki tasot sisältävät</h3>
@@ -1563,7 +1556,7 @@
       </ul>
     </div>
     <div class="tiers-cta reveal">
-      <p class="tiers-note">Ettekö ole varma tasosta? Varatkaa kartoitus, niin suosittelemme sopivan.</p>
+      <p class="tiers-note">Hinta räätälöidään aina teidän tarpeidenne mukaan. Varatkaa kartoitus, niin saatte tarkan hinta-arvion.</p>
       <a href="https://lynevo-solutions-fi.cal.com/lynevo-fi/tutustumispuhelu" target="_blank" rel="noopener" data-cal-namespace="tutustumispuhelu" data-cal-link="lynevo-fi/tutustumispuhelu" data-cal-origin="https://lynevo-solutions-fi.cal.com" data-cal-config='{"layout":"month_view","theme":"dark"}' class="btn btn-primary">Varatkaa kartoitus <span class="arrow">→</span></a>
     </div>
   </div>
@@ -1762,29 +1755,6 @@
     requestAnimationFrame(tick);
   };
 
-  // Price odometer — rolls up to the printed price, then restores the exact original string
-  const rollPrice = (priceEl) => {
-    if (!priceEl || reduceMotionEarly || priceEl.dataset.rolled) return;
-    priceEl.dataset.rolled = '1';
-    const node = priceEl.firstChild;
-    if (!node || node.nodeType !== 3) return;
-    const orig = node.textContent;
-    const numStr = (orig.match(/[\d\s ]+\d/) || [''])[0];
-    const target = parseInt(numStr.replace(/\D/g, ''), 10);
-    if (!target) return;
-    const fmt = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-    const dur = 1100;
-    let start = null;
-    const tick = (t) => {
-      if (start === null) start = t;
-      const p = Math.min(1, (t - start) / dur);
-      const eased = 1 - Math.pow(1 - p, 5);
-      node.textContent = orig.replace(numStr, fmt(Math.round(eased * target)));
-      if (p < 1) requestAnimationFrame(tick); else node.textContent = orig;
-    };
-    requestAnimationFrame(tick);
-  };
-
   // Live briefing — types the morning report line by line, checks each item,
   // rolls the time-saved counter, then loops through briefing variants.
   const startBriefing = (card) => {
@@ -1874,7 +1844,6 @@
   // Effects that ride on the reveal moment
   const revealFX = (el) => {
     if (el.classList.contains('label')) scrambleLabel(el);
-    if (el.classList.contains('tier')) rollPrice(el.querySelector('.tier-price'));
     if (el.classList.contains('briefing')) startBriefing(el);
   };
 
